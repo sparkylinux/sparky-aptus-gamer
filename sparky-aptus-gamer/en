@@ -1,0 +1,53 @@
+# English localization file for Sparky APTus Gamer.
+# Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
+# Under the GNU GPL v2
+# Last update 2017/08/27 by pavroo
+
+LOCAL1="Name"
+LOCAL2="Description"
+LOCAL3="Status"
+LOCAL4="Exit"
+LOCAL5="Something is wrong! \nProbably you have stopped the installation.\nOtherwise check your internet connection, refresh package list and try again. \n\nExiting..."
+LOCAL6="The application has been installed successfully! \n\nBack to the main menu..."
+#LOCAL7=""
+LOCAL8="The application is already installed! \n\nExiting..."
+LOCAL9="Installed"
+LOCAL10="This lets you quickly install game emulators and other applications for gaming from the repository.\n\nPlease select an application to be installed"
+LOCAL11="Frontend for AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine and other emulators"
+LOCAL12="Emulator for Atari 8-bit systems, XE Game System and Atari 5200 SuperSystem console"
+LOCAL13="Nintendo DS emulator"
+LOCAL14="Digital distribution platform for Windows, Linux and OS X systems - OnLine Installer"
+LOCAL15="DOS emulator for BeOS, Linux, Mac OS X, OS2, and Windows"
+LOCAL16="DOS Emulator for Linux"
+LOCAL17="ePSXe (enhanced PSX emulator) is a PlayStation video game console emulator"
+LOCAL18="Nintendo Entertainment System (NES), Famicom and Famicom Disk System (FDS) emulator"
+LOCAL19="Cross-platform Amiga emulator"
+LOCAL20="Simple MAME frontend"
+LOCAL21="Atari ST, STE, TT and Falcon emulator for Linux and other systems"
+LOCAL22="Emulator for Nintendos SNES, NES, Gameboy, Gameboy Color and Gameboy Advance"
+LOCAL23="Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD emulator"
+LOCAL24="Hardware emulator which faithfully reproduces the behavior of many arcade machines"
+LOCAL25="Atari Lynx, GameBoy, NES, SNES, PC-FX, Sega, Sony PlayStation and others systems emulator"
+LOCAL26="Emulator for various consoles and computing systems"
+LOCAL27="Nintendo Entertainment System/Famicom emulator"
+LOCAL28="Sony PlayStation emulator"
+LOCAL29="PCSX-Reloaded - Sony PlayStation emulator"
+LOCAL30="Front-end for Wine"
+LOCAL31="An open source PSP emulator available for Windows, MacOS, Linux and Android"
+LOCAL32="Launcher for the Steam software distribution service"
+LOCAL33="Atari 2600 Emulator for SDL and the X Window System"
+LOCAL34="Full featured Game Boy Advance emulator"
+LOCAL35="Cross-platform emulator for Atari's infamous Jaguar console"
+LOCAL36="Windows API implementation"
+LOCAL37="A POSIX shell script 'package manager' for WINE to install some Windows software easily"
+LOCAL38="Sega Saturn emulator"
+LOCAL39="Emulator for the Super Nintendo Entertainment System"
+LOCAL40="To finish the installation of Desura Client for Linux, \ngo to Menu-> Internet-> Desura Installer\n\nExiting..."
+LOCAL41="The best way to play itch.io games"
+LOCAL42="VoIP software for audio communication between users"
+LOCAL43="Lutris is a gaming platform for GNU/Linux"
+LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
+
+### .desktop file to be translated too
+# Name[en_US]=
+# Comment[en_US]=Install game emulators via one click

@@ -1,0 +1,54 @@
+# Polish localization file for Sparky APTus Gamer.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
+# Under the GNU GPL v2
+# Translated to Polish by pavroo
+# Last update 2017/08/27 by pavroo
+
+LOCAL1="Nazwa"
+LOCAL2="Opis"
+LOCAL3="Status"
+LOCAL4="Zakończ"
+LOCAL5="Coś poszło źle! \nPrawdopodobnie zatrzymałeś instalację lub serwer repozytoriów jest niedostępny.\nSprawdź połączenie z internetem, odśwież listę pakietów i spróbuj ponownie. \n\nWyjście..."
+LOCAL6="Aplikacja została zainstalowana pomyślnie! \n\nPowrót do głównego menu..."
+#LOCAL7=""
+LOCAL8="Aplikacja jest już zainstalowana! \n\nZakończ..."
+LOCAL9="Zainstalowane"
+LOCAL10="Szybka instalacja emulatorów gier i innych narzędzi dla graczy.\n\nProszę wybrać aplikację do zainstalowania"
+LOCAL11="Interfejs dla AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine i innych emulatorów"
+LOCAL12="Emulator konsoli Atari 8-bit systems, XE Game System i Atari 5200 SuperSystem"
+LOCAL13="Emulator Nintendo DS"
+LOCAL14="Platforma Desura dla Windows, Linux i OS X - instalator sieciowy dla Linux"
+LOCAL15="Emulator DOS dla BeOS, Linux, Mac OS X, OS2 i Windows"
+LOCAL16="Emulator DOS dla Linux"
+LOCAL17="ePSXe (unowocześniony emulator PSX) jest emulatorem konsoli gier wideo PlayStation"
+LOCAL18="Emulator Nintendo Entertainment System (NES), Famicom i Famicom Disk System (FDS)"
+LOCAL19="Wieloplatformowy emulator Amiga"
+LOCAL20="Graficzny interfejs dla MAME"
+LOCAL21="Emulator Atari ST, STE, TT oraz Falcon dla Linux i innych systemów"
+LOCAL22="Emulator Nintendos SNES, NES, Gameboy, Gameboy Color i Gameboy Advance"
+LOCAL23="Emulator Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico i MegaCD"
+LOCAL24="Emulator sprzętu, który wiernie odtwarza zachowanie wielu maszyn arcade"
+LOCAL25="Emulator Atari Lynx, GameBoy, NES, SNES, PC-FX, Sega, Sony PlayStation i innych systemów"
+LOCAL26="Emulator dla różnych konsol i systemów komputerowych"
+LOCAL27="Emulator Nintendo Entertainment System/Famicom"
+LOCAL28="Emulator Sony PlayStation"
+LOCAL29="PCSX-Reloaded - emulator Sony PlayStation"
+LOCAL30="Interfejs graficzny dla Wine"
+LOCAL31="Otwarto-źródłowy emulator PSP dostępny dla Windows, MacOS, Linux i Android"
+LOCAL32="Instalator platformy Steam dla Linux"
+LOCAL33="Emulator Atari 2600 dla SDL oraz X Window System"
+LOCAL34="W pełni wyposażony emulator Game Boy Advance"
+LOCAL35="Wieloplatformowy emulator dla konsoli Atari Jaguar"
+LOCAL36="Implementacja Windows API"
+LOCAL37="Skrypt dla WINE instalujący wiele aplikacji systemu Windows"
+LOCAL38="Emulator Sega Saturn"
+LOCAL39="Emulator dla systemu Super Nintendo Entertainment"
+LOCAL40="Aby dokończyć instalację klienta Desura dla Linux, \nidź do Menu-> Internet-> Desura Instalator\n\nZakończ..."
+LOCAL41="Cyfrowa platforma gier itch.io"
+LOCAL42="Program VoIP do komunikacji audio i wideo pomiędzy użytkownikami"
+LOCAL43="Lutris to platforma gier dla GNU/Linux"
+LOCAL44="GZDoom to otwarto-źródłowy port ZDoom rozwijany przez Christophera Oelckersa"
+
+### .desktop file, również do przetłumaczenia
+# Name[pl_PL]=
+# Comment[pl_PL]=Zainstaluj emulatory gier jednym klikiem

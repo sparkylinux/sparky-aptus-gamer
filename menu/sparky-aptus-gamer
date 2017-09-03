@@ -1,0 +1,1 @@
+?package(sparky-aptus-gamer):needs="X11" section="Applications/System"        title="APTus Gamer" command="remsu /usr/bin/sparky-aptus-gamer" icon="applications-games"

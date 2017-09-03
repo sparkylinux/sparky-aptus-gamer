@@ -1,0 +1,54 @@
+# Japanese localization file for Sparky APTus Gamer.
+# Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
+# Under the GNU GPL v2
+# Translated to Japanese by BALLOON a.k.a. Fu-sen.
+# Last update 2017/08/27 by pavroo
+
+LOCAL1="名前"
+LOCAL2="説明"
+LOCAL3="状況"
+LOCAL4="終了"
+LOCAL5="何か問題があります！ \nインストールを停止しています。\nそうでない場合は、インターネット接続を確認してパッケージリストを更新し再試行してください。\n\n終了します..."
+LOCAL6="アプリケーションをインストールしました！ \n\nメインメニューへ戻ります..."
+#LOCAL7=""
+LOCAL8="アプリケーションはすでにインストールされています！ \n\n終了します..."
+LOCAL9="インストール済"
+LOCAL10="リポジトリからゲームのためのゲームエミュレータ・その他のアプリケーションをインストールすることができます。\n\nインストールするアプリケーションを選んで下さい"
+LOCAL11="AdvanceMAME・AdvanceMESS・MAME・MESS・xmame・Raine・その他エミュレータのフロントエンド"
+LOCAL12="Atari 8-bit systems, XE Game System and Atari 5200 SuperSystem コンソールエミュレータ"
+LOCAL13="Nintendo DS エミュレーター"
+LOCAL14="Digital distribution platform for Windows, Linux and OS X systems - オンラインインストーラー"
+LOCAL15="BeOS・Linux・Mac OS X・OS2・Windows の DOS emulator"
+LOCAL16="Linux の DOS Emulator"
+LOCAL17="ePSXe (enhanced PSX emulator) PlayStation ビデオゲームコンソールエミュレーター"
+LOCAL18="Nintendo Entertainment System (NES), ファミコン・ディスクシステム (FDS) エミュレーター"
+LOCAL19="クロクプラットフォーム Amiga エミュレーター"
+LOCAL20="シンプル MAME フロントエンド"
+LOCAL21="Linux・他システム向け Atari ST・STE・TT・Falcon エミュレーター"
+LOCAL22="Nintendos SNES・NES・Gameboy・Gameboy Color・Gameboy Advance 向けエミュレーター"
+LOCAL23="Sega SG/SC/SF・Master System・Game Gear・Genesis/Megadrive・SVP・Pico・SegaCD/MegaCD エミュレーター"
+LOCAL24="多くのアーケードマシンの動作を再現できるハードウェアエミュレーター"
+LOCAL25="Atari Lynx・GameBoy・NES・SNES・PC-FX・SEGA・SONY PlayStation・他システムエミュレータ"
+LOCAL26="さまざまなコンソールやコンピューターシステム用エミュレーター"
+LOCAL27="Nintendo Entertainment System・ファミコンエミュレーター"
+LOCAL28="Sony PlayStation エミュレーター"
+LOCAL29="PCSX-Reloaded - SPNY PlayStation エミュレーター"
+LOCAL30="Wine フロントエンド"
+LOCAL31="Windows・MacOS・Linux・Android 向けオープンソース PSP エミュレータ"
+LOCAL32="Steam ソフトウェアディストリビューションサービスランチャー"
+LOCAL33="SDL・X ウインドウシステム Atari 2600 エミュレーター"
+LOCAL34="Game Boy Advance エミュレーター"
+LOCAL35="クロスプラットフォーム Atari's infamous Jaguar コンソールエミュレータ"
+LOCAL36="Windows API の実装"
+LOCAL37=" POSIX シェルスクリプト パッケージマネージャー for WINE による Windows ソフトウェアのインストール"
+LOCAL38="Sega Saturn エミュレーター"
+LOCAL39="Super Nintendo Entertainment System エミュレーター"
+LOCAL40="Linux 用 Desura クライアントのインストールを完了するためには、 \nメニュー → インターネット → Desura Installer を進めて下さい。\n\n終了します..."
+LOCAL41="The best way to play itch.io games"
+LOCAL42="VoIP software for audio communication between users"
+LOCAL43="Lutris is a gaming platform for GNU/Linux"
+LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
+
+### .desktop file to be translated too
+# Name[ja_JP]=
+# Comment[ja_JP]=ワンクリックでゲームエミュレーターをインストール

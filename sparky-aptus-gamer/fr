@@ -1,0 +1,53 @@
+﻿# Fichier de localisation française de Sparky APTus Gamer.
+# Copyright 2016 hiver <hiver@club-internet.fr> 2016/06/05
+# Sous licence GNU GPL v2
+# Last update 2017/08/27 by pavroo
+
+LOCAL1="Nom"
+LOCAL2="Description"
+LOCAL3="État"
+LOCAL4="Quitter"
+LOCAL5="Il y a un problème! \nPeut-être avez-vous stoppé l'installation.\nSinon, vérifiez votre connexion internet, mettez à jour la liste des paquets et  essayez à nouveau. \n\nSortie..."
+LOCAL6="L'application a été installée avec succès! \n\nRetour au menu principal..."
+#LOCAL7=""
+LOCAL8="L'application est déjà installée! \n\nSortie...
+LOCAL9="Installé"
+LOCAL10="Ceci vous permet d'installer rapidement des émulateurs de jeux et d'autres applications pour jouer depuis les dépôts.\n\nChoisissez une application à installer, s'il vous plaît:"
+LOCAL11="Interface pour AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine et autres émulateurs"
+LOCAL12="Émulateur pour Atari 8-bit systems, XE Game System et la console Atari 5200 SuperSystem"
+LOCAL13="Émulateur pour Nintendo DS"
+LOCAL14="Plateforme de distribution numérique pour  Windows, Linux et systèmes OS X  - installateur en ligne"
+LOCAL15="Émulateur DOS pour BeOS, Linux, Mac OS X, OS2, et Windows"
+LOCAL16="Émulateur DOS pour Linux"
+LOCAL17="ePSXe (émulateur  PSX amélioré ) est un émulateur de console de jeux vidéos PlayStation"
+LOCAL18="Émulateur pour Nintendo Entertainment System (NES), Famicom et Famicom Disk System (FDS) "
+LOCAL19="Émulateur multiplatforme Amiga"
+LOCAL20="Interface MAME simple"
+LOCAL21="Émulateur d'Atari ST, STE, TT et Falcon pour Linux et autres systèmes"
+LOCAL22="Émulateur pour Nintendos SNES, NES, Gameboy, Gameboy Color and Gameboy Advance"
+LOCAL23="Émulateur pour Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD"
+LOCAL24="Émulateur matériel qui reproduit fidèlement le comportement de nombreuses machines d'arcade"
+LOCAL25="Émulateur pour Atari Lynx, GameBoy, NES, SNES, PC-FX, Sega, Sony PlayStation et autres systèmes"
+LOCAL26="Émulateur pour différentes consoles et systèmes informatiques"
+LOCAL27="Émulateur pour Nintendo Entertainment System/Famicom"
+LOCAL28="Émulateur pour Sony PlayStation"
+LOCAL29="Émulateur pour PCSX-Reloaded - Sony PlayStation"
+LOCAL30="Interface pour Wine"
+LOCAL31="Émulateur au code source libre de PSP disponible pour Windows, MacOS, Linux et Android"
+LOCAL32="Lanceur pour le service de distribution logiciel STEAM"
+LOCAL33="Émulateur d'Atari 2600 pour SDL et le système X Window"
+LOCAL34="Émulateur complet pour Game Boy Advance"
+LOCAL35="Émulateur multiplatforme pour l’infâme console Jaguar d'Atari "
+LOCAL36="implementation  des API Windows"
+LOCAL37="Un script POSIX  'gestionnaire de paquets' pour WINE afin d'installer facilement certains logiciels Windows"
+LOCAL38="Émulateur de Sega Saturn"
+LOCAL39="Émulateur pour Super Nintendo Entertainment System"
+LOCAL40="Pour terminer l'installation du client Desura pour Linux, \naller dans le  Menu-> Internet-> Installateur Desura\n\nSortie..."
+LOCAL41="La meilleure façon de jouer les jeux itch.io"
+LOCAL42="VoIP software for audio communication between users"
+LOCAL43="Lutris is a gaming platform for GNU/Linux"
+LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
+
+### .desktop file to be translated too
+# Name[fr_FR]=
+# Comment[fr_FR]=Installer des émulateurs de jeux en un clic

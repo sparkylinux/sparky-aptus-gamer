@@ -1,0 +1,54 @@
+# German localization file for Sparky APTus Gamer.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/25
+# Under the GNU GPL v2
+# Translated to German by Pete B. 2015/10/29
+# Last update 2017/08/27 by pavroo
+
+LOCAL1="Name"
+LOCAL2="Beschreibung"
+LOCAL3="Status"
+LOCAL4="Beenden"
+LOCAL5="Etwas stimmt hier nicht!\nMöglicherweise wurde die Installation manuell abgebrochen.\nFalls nicht, Internetverbingung prüfen, Paket-Listen aktualisieren und erneut probieren. \n\nAPTus Gamer wird beendet..."
+LOCAL6="Die Anwendung wurde erfolgreich installiert! \n\nZurück ins Hauptmenü..."
+#LOCAL7=""
+LOCAL8="Die Anwendung ist bereits installiert! \n\nAPTus Gamer wird beendet..."
+LOCAL9="Installiert"
+LOCAL10="Hier können Game-Emulatoren und andere Anwendungen zum Spielen aus den Repositories installiert werden.\n\nWähle die Anwendung aus, die installiert werden soll!"
+LOCAL11="GUI für AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine und andere Emulatoren"
+LOCAL12="Emulator für Atari 8-bit Systeme, XE Game System and Atari 5200 SuperSystem Konsole"
+LOCAL13="Nintendo DS Emulator"
+LOCAL14="Digitale distribution Plattform für Windows, Linux and OS X Systeme - OnLine Installer"
+LOCAL15="DOS Emulator für BeOS, Linux, Mac OS X, OS2, und Windows"
+LOCAL16="DOS Emulator für Linux"
+LOCAL17="ePSXe (enhanced PSX Emulator) ist ein PlayStation Konsolen Emulator"
+LOCAL18="Nintendo Entertainment System (NES), Famicom und Famicom Disk System (FDS) Emulator"
+LOCAL19="Plattformübergreifender Amiga Emulator"
+LOCAL20="Einfaches MAME GUI"
+LOCAL21="Atari ST, STE, TT und Falcon Emulator für Linux und andere Systeme"
+LOCAL22="Emulator für Nintendos SNES, NES, Gameboy, Gameboy Color und Gameboy Advance"
+LOCAL23="Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD Emulator"
+LOCAL24="Ein Hardware Emulator, welcher die Verhaltensweisen vieler Arcade Geräte simuliert"
+LOCAL25="Emulator für Atari Lynx, GameBoy, NES, SNES, PC-FX, Sega, Sony PlayStation und andere Systeme"
+LOCAL26="Emulator für mehrere Konsolen und Systeme"
+LOCAL27="Nintendo Entertainment System/Famicom Emulator"
+LOCAL28="Sony PlayStation Emulator"
+LOCAL29="PCSX-Reloaded - Sony PlayStation Emulator"
+LOCAL30="GUI für Wine"
+LOCAL31="Ein Open-Source PSP Emulator, erhältlich für Windows, MacOS, Linux und Android"
+LOCAL32="Programmstarter für den Steam Software Distribution Service"
+LOCAL33="Atari 2600 Emulator für SDL und das X Window System"
+LOCAL34="Umfangreicher Game Boy Advance Emulator"
+LOCAL35="Plattformübergreifender Emulator für Atari's berüchtigte Jaguar Konsole"
+LOCAL36="Windows API Implementierung"
+LOCAL37="Ein POSIX Shell Script 'Paket Manager' für WINE um Windows Programme einfacher zu installieren"
+LOCAL38="Sega Saturn Emulator"
+LOCAL39="Emulator für das Super Nintendo Entertainment System"
+LOCAL40="Um die Installation des Desura Client für Linux abzuschließen, \nGehe im Menu-> Internet-> Desura Installer\n\nAPTus Gamer wird beendet..."
+LOCAL41="The best way to play itch.io games"
+LOCAL42="VoIP software for audio communication between users"
+LOCAL43="Lutris is a gaming platform for GNU/Linux"
+LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
+
+### .desktop file to be translated too
+# Name[de_DE]=
+# Comment[de_DE]=Mit einem Klick kann man sich Emulatoren installieren, um Konsolenspiele von damals unter Sparky zu spielen

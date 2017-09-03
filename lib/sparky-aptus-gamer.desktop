@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=APTus Gamer
+GenericName=APTus Gamer
+Comment=Install game emulators via one click
+Comment[de_DE]=Mit einem Klick kann man sich Emulatoren installieren, um Konsolenspiele von damals unter Sparky zu spielen
+Comment[es_AR]=Instala emuladores de juegos mediante un clic
+Comment[fr_FR]=Installer des émulateurs de jeux en un clic
+Comment[it_IT]=Installa emulatori per console e videgiochi con un solo click
+Comment[ja_JP]=ワンクリックでゲームエミュレーターをインストール
+Comment[pl_PL]=Zainstaluj emulatory gier jednym klikiem
+Comment[pt_BR]=Instalar emuladores de jogos em apenas um click
+Comment[pt_PT]=Instale emuladores de jogos através de um clique
+Comment[ru_RU]=Установка эмуляторов игр одним щелчком
+Exec=remsu /usr/bin/sparky-aptus-gamer
+Icon=applications-games
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;System

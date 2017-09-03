@@ -1,0 +1,874 @@
+#!/bin/bash
+
+# Sparky APTus Gamer is a simply GUI frontend for APT-GET
+# It lets you install game emulators from Debian and Sparky repository
+# Created by Paweł "pavroo" Pijanowski 2014/11/16
+# Copyright 2014, 2015, 2016, 2017 under the GNU GPL2 License
+# Last updated 2017/08/27
+
+# get default's locale file
+DEFLOCDIR="/usr/share/sparky/sparky-aptus-gamer"
+if [ "`cat /etc/default/locale | grep de_DE`" != "" ]; then
+. $DEFLOCDIR/de
+elif [ "`cat /etc/default/locale | grep es_AR`" != "" ]; then
+. $DEFLOCDIR/es
+elif [ "`cat /etc/default/locale | grep fr_FR`" != "" ]; then
+. $DEFLOCDIR/fr
+elif [ "`cat /etc/default/locale | grep it_IT`" != "" ]; then
+. $DEFLOCDIR/it
+elif [ "`cat /etc/default/locale | grep ja_JP`" != "" ]; then
+. $DEFLOCDIR/ja
+elif [ "`cat /etc/default/locale | grep pl_PL`" != "" ]; then
+. $DEFLOCDIR/pl
+elif [ "`cat /etc/default/locale | grep pt_BR`" != "" ]; then
+. $DEFLOCDIR/pt_BR
+elif [ "`cat /etc/default/locale | grep pt_PT`" != "" ]; then
+. $DEFLOCDIR/pt_PT
+elif [ "`cat /etc/default/locale | grep ru_RU`" != "" ]; then
+. $DEFLOCDIR/ru
+else
+. $DEFLOCDIR/en
+fi
+
+testroot="`whoami`"
+
+if [ "$testroot" != "root" ]; then
+	/usr/bin/remsu $0 &
+fi
+
+MENU1="yad --window-icon=applications-games --width=980 --height=450 --center"
+DIALOG="yad --window-icon=applications-games --width=450 --height=200 --center"
+TITLE="--always-print-result --dialog-sep --image=applications-games --title="
+TEXT="--text="
+MENU="--list --column=$LOCAL1 --column=$LOCAL2 --column=$LOCAL3"
+OKEXIT=" --button=Ok:0 --button=$LOCAL4:1 "
+MSGBOX=" --button=Ok:0 "
+TITLETEXT="APTus Gamer"
+TEXTBREAK="$LOCAL5"
+TEXTDONE="$LOCAL6"
+TEXTSTOP="$LOCAL8"
+if [ -f /opt/sparky/sparky-xterm ]; then
+. /opt/sparky/sparky-xterm
+else
+SPARKYXTERM="x-terminal-emulator"
+fi
+INSTALL="apt-get install"
+
+## Status of the application to be displayed in the main menu ###
+
+if [ -f /usr/bin/advmenu ]; then
+ADVANCE1="$LOCAL9"
+else
+ADVANCE1=""
+fi
+
+if [ -f /usr/bin/atari800 ]; then
+ATARI1="$LOCAL9"
+else
+ATARI1=""
+fi
+
+if [ -f /usr/games/desmume ]; then
+DESM1="$LOCAL9"
+else
+DESM1=""
+fi
+
+if [ -f /usr/bin/dosbox ]; then
+DOSBOX1="$LOCAL9"
+else
+DOSBOX1=""
+fi
+
+if [ -f /usr/bin/dosemu ]; then
+DOSEMU1="$LOCAL9"
+else
+DOSEMU1=""
+fi
+
+if [ -f /usr/bin/ePSXe ] || [ -f /usr/bin/epsxe_x64 ]; then
+EPSXE1="$LOCAL9"
+else
+EPSXE1=""
+fi
+
+if [ -f /usr/games/fceux ]; then
+FCEUX1="$LOCAL9"
+else
+FCEUX1=""
+fi
+
+if [ -f /usr/bin/fs-uae-arcade ]; then
+FSUAE1="$LOCAL9"
+else
+FSUAE1=""
+fi
+
+if [ -f /usr/bin/gnome-video-arcade ]; then
+VARCADE1="$LOCAL9"
+else
+VARCADE1=""
+fi
+
+if [ -f /usr/games/gzdoom ]; then
+GZDOOM1="$LOCAL9"
+else
+GZDOOM1=""
+fi
+
+if [ -f /usr/bin/hatari ]; then
+HATA1="$LOCAL9"
+else
+HATA1=""
+fi
+
+if [ -f /usr/bin/higan-accuracy ]; then
+HIGAN1="$LOCAL9"
+else
+HIGAN1=""
+fi
+
+if [ -f /usr/bin/itch ]; then
+ITCH1="$LOCAL9"
+else
+ITCH1=""
+fi
+
+if [ -f /usr/games/kega-fusion ]; then
+KEGA1="$LOCAL9"
+else
+KEGA1=""
+fi
+
+if [ -f /usr/bin/lutris ]; then
+LUTRIS1="$LOCAL9"
+else
+LUTRIS1=""
+fi
+
+if [ -f /usr/games/mame ]; then
+MAME1="$LOCAL9"
+else
+MAME1=""
+fi
+
+if [ -f /usr/games/mednafen ]; then
+MEDNA1="$LOCAL9"
+else
+MEDNA1=""
+fi
+
+if [ -f /usr/games/mess ]; then
+MESS1="$LOCAL9"
+else
+MESS1=""
+fi
+
+if [ -f /usr/games/nestopia ]; then
+NES1="$LOCAL9"
+else
+NES1=""
+fi
+
+if [ -f /usr/games/PCSX2 ]; then
+PCSX1="$LOCAL9"
+else
+PCSX1=""
+fi
+
+if [ -f /usr/games/pcsx ]; then
+PCSXR1="$LOCAL9"
+else
+PCSXR1=""
+fi
+
+if [ -f /usr/bin/playonlinux ]; then
+PLAY1="$LOCAL9"
+else
+PLAY1=""
+fi
+
+if [ -f /usr/games/ppsspp ]; then
+PPSSPP1="$LOCAL9"
+else
+PPSSPP1=""
+fi
+
+if [ -f /usr/games/steam ]; then
+STEAM1="$LOCAL9"
+else
+STEAM1=""
+fi
+
+if [ -f /usr/bin/stella ]; then
+STELLA1="$LOCAL9"
+else
+STELLA1=""
+fi
+
+if [ -f /usr/bin/teamspeak-installer ]; then
+TEAMSPEAK1="$LOCAL9"
+else
+TEAMSPEAK1=""
+fi
+
+if [ -f /usr/bin/virtualjaguar ]; then
+VJAG1="$LOCAL9"
+else
+VJAG1=""
+fi
+
+if [ -f /usr/bin/gvba ]; then
+GVBA1="$LOCAL9"
+else
+GVBA1=""
+fi
+
+
+if [ -f /usr/bin/wine ]; then
+WINE1="$LOCAL9"
+else
+WINE1=""
+fi
+
+if [ -f /usr/bin/winetricks ]; then
+WINETR1="$LOCAL9"
+else
+WINETR1=""
+fi
+
+if [ -f /usr/bin/yabause-qt ]; then
+YABA1="$LOCAL9"
+else
+YABA1=""
+fi
+
+if [ -f /usr/bin/zsnes ]; then
+ZSNES1="$LOCAL9"
+else
+ZSNES1=""
+fi
+
+mainmenu () {
+CHOICES=`$MENU1 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL10:" \
+AdvanceMENU "$LOCAL11" "$ADVANCE1" \
+Atari800 "$LOCAL12" "$ATARI1" \
+DeSmuME "$LOCAL13" "$DESM1" \
+DOSBox "$LOCAL15" "$DOSBOX1" \
+DOSEMU "$LOCAL16" "$DOSEMU1" \
+ePSXe "$LOCAL17" "$EPSXE1" \
+FCEUX "$LOCAL18" "$FCEUX1" \
+FS-UAE "$LOCAL19" "$FSUAE1" \
+GNOME_Video_Arcade "$LOCAL20" "$VARCADE1" \
+GZDoom "$LOCAL44" "$GZDOOM1" \
+Hatari "$LOCAL21" "$HATA1" \
+Higan "$LOCAL22" "$HIGAN1" \
+Itch "$LOCAL41" "$ITCH1" \
+Kega_Fusion "$LOCAL23" "$KEGA1" \
+Lutris "$LOCAL43" "$LUTRIS1" \
+MAME "$LOCAL24" "$MAME1" \
+Mednafen "$LOCAL25" "$MEDNA1" \
+MESS "$LOCAL26" "$MESS1" \
+Nestopia "$LOCAL27" "$NES1" \
+PCSX2 "$LOCAL28" "$PCSX1" \
+PCSXR "$LOCAL29" "$PCSXR1" \
+PlayOnLinux "$LOCAL30" "$PLAY1" \
+PPSSPP "$LOCAL31" "$PPSSPP1" \
+Steam "$LOCAL32" "$STEAM1" \
+Stella "$LOCAL33" "$STELLA1" \
+TeamSpeak "$LOCAL42" "$TEAMSPEAK1" \
+VisualBoyAdvance "$LOCAL34" "$GVBA1" \
+Virtual_Jaguar "$LOCAL35" "$VJAG1" \
+Wine "$LOCAL36" "$WINE1" \
+Winetricks "$LOCAL37" "$WINETR1" \
+Yabause "$LOCAL38" "$YABA1" \
+ZSNES "$LOCAL39" "$ZSNES1"`
+
+if [ "$?" = "0" ]; then
+CHOICE=`echo $CHOICES | cut -d "|" -f 1`
+else
+exit 0
+fi
+
+if [ "$CHOICE" = "AdvanceMENU" ]; then
+advancemenu
+elif [ "$CHOICE" = "Atari800" ]; then
+atarimenu
+elif [ "$CHOICE" = "DeSmuME" ]; then
+desmmenu
+elif [ "$CHOICE" = "DOSBox" ]; then
+dosboxmenu
+elif [ "$CHOICE" = "DOSEMU" ]; then
+dosemumenu
+elif [ "$CHOICE" = "ePSXe" ]; then
+epsxemenu
+elif [ "$CHOICE" = "FCEUX" ]; then
+fceuxmenu
+elif [ "$CHOICE" = "FS-UAE" ]; then
+fsuaemenu
+elif [ "$CHOICE" = "GNOME_Video_Arcade" ]; then
+varcademenu
+elif [ "$CHOICE" = "GZDoom" ]; then
+gzdoommenu
+elif [ "$CHOICE" = "Hatari" ]; then
+hatamenu
+elif [ "$CHOICE" = "Higan" ]; then
+higanmenu
+elif [ "$CHOICE" = "Itch" ]; then
+itchmenu
+elif [ "$CHOICE" = "Kega_Fusion" ]; then
+kegamenu
+elif [ "$CHOICE" = "Lutris" ]; then
+lutrismenu
+elif [ "$CHOICE" = "MAME" ]; then
+mamemenu
+elif [ "$CHOICE" = "Mednafen" ]; then
+medmenu
+elif [ "$CHOICE" = "MESS" ]; then
+messmenu
+elif [ "$CHOICE" = "Nestopia" ]; then
+nesmenu
+elif [ "$CHOICE" = "PCSX2" ]; then
+pcsxmenu
+elif [ "$CHOICE" = "PCSXR" ]; then
+pcsxrmenu
+elif [ "$CHOICE" = "PlayOnLinux" ]; then
+playmenu
+elif [ "$CHOICE" = "PPSSPP" ]; then
+ppssmenu
+elif [ "$CHOICE" = "Steam" ]; then
+steammenu
+elif [ "$CHOICE" = "Stella" ]; then
+stelmenu
+elif [ "$CHOICE" = "TeamSpeak" ]; then
+teamspeakmenu
+elif [ "$CHOICE" = "VisualBoyAdvance" ]; then
+gvbamenu
+elif [ "$CHOICE" = "Virtual_Jaguar" ]; then
+vjagmenu
+elif [ "$CHOICE" = "Wine" ]; then
+winemenu
+elif [ "$CHOICE" = "Winetricks" ]; then
+winetrmenu
+elif [ "$CHOICE" = "Yabause" ]; then
+yabamenu
+elif [ "$CHOICE" = "ZSNES" ]; then
+zsnesmenu
+else
+exit 0
+fi
+}
+
+advancemenu () {
+if [ -f /usr/bin/advmenu ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL advancemenu"
+if [ -f /usr/bin/advmenu ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+atarimenu () {
+if [ -f /usr/bin/atari800 ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL atari800"
+if [ -f /usr/bin/atari800 ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+desmmenu () {
+if [ -f /usr/games/desmume ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL desmume"
+if [ -f /usr/games/desmume ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+dosboxmenu () {
+if [ -f /usr/bin/dosbox ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL dosbox"
+if [ -f /usr/bin/dosbox ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+dosemumenu () {
+if [ -f /usr/bin/dosemu ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL dosemu"
+if [ -f /usr/bin/dosemu ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+epsxemenu () {
+if [ -f /usr/bin/ePSXe ] || [ -f /usr/bin/epsxe_x64 ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL epsxe"
+if [ -f /usr/bin/ePSXe ] || [ -f /usr/bin/epsxe_x64 ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+fceuxmenu () {
+if [ -f /usr/games/fceux ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL fceux"
+if [ -f /usr/games/fceux ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+fsuaemenu () {
+if [ -f /usr/bin/fs-uae-arcade ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL fs-uae-arcade"
+if [ -f /usr/bin/fs-uae-arcade ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+varcademenu () {
+if [ -f /usr/bin/gnome-video-arcade ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL gnome-video-arcade"
+if [ -f /usr/bin/gnome-video-arcade ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+gzdoommenu () {
+if [ -f /usr/games/gzdoom ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL gzdoom"
+if [ -f /usr/games/gzdoom ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+hatamenu () {
+if [ -f /usr/bin/hatari ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL hatari"
+if [ -f /usr/bin/hatari ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+higanmenu () {
+if [ -f /usr/bin/higan-accuracy ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL higan"
+if [ -f /usr/bin/higan-accuracy ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+itchmenu () {
+if [ -f /usr/bin/itch ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL itch"
+if [ -f /usr/bin/itch ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+kegamenu () {
+if [ -f /usr/games/kega-fusion ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL kega-fusion:i386"
+if [ -f /usr/games/kega-fusion ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+lutrismenu () {
+if [ -f /usr/bin/lutris ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL lutris"
+if [ -f /usr/bin/lutris ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+mamemenu () {
+if [ -f /usr/games/mame ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL mame"
+if [ -f /usr/games/mame ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+medmenu () {
+if [ -f /usr/games/mednafen ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL mednafen"
+if [ -f /usr/games/mednafen ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+messmenu () {
+if [ -f /usr/games/mess ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL mess"
+if [ -f /usr/games/mess ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+nesmenu () {
+if [ -f /usr/games/nestopia ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL nestopia"
+if [ -f /usr/games/nestopia ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+pcsxmenu () {
+if [ -f /usr/games/PCSX2 ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL pcsx2"
+if [ -f /usr/games/PCSX2 ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+pcsxrmenu () {
+if [ -f /usr/games/pcsxr ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL pcsxr"
+if [ -f /usr/games/pcsxr ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+
+playmenu () {
+if [ -f /usr/bin/playonlinux ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL playonlinux"
+if [ -f /usr/bin/playonlinux ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+ppssmenu () {
+if [ -f /usr/games/ppsspp ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL ppsspp-sdl"
+if [ -f /usr/games/ppsspp ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+steammenu () {
+if [ -f /usr/games/steam ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL steam"
+if [ -f /usr/games/steam ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+stelmenu () {
+if [ -f /usr/bin/stella ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL stella"
+if [ -f /usr/bin/stella ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+teamspeakmenu () {
+if [ -f /usr/bin/teamspeak-installer ]; then
+	/usr/bin/teamspeak-installer
+else
+	$SPARKYXTERM -e "$INSTALL teamspeak-installer"
+	if [ -f /usr/bin/teamspeak-installer ]; then
+		/usr/bin/teamspeak-installer
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+gvbamenu () {
+if [ -f /usr/bin/gvba ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL visualboyadvance visualboyadvance-gtk"
+if [ -f /usr/bin/gvba ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+vjagmenu () {
+if [ -f /usr/bin/virtualjaguar ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL virtualjaguar"
+if [ -f /usr/bin/virtualjaguar ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+winemenu () {
+if [ -f /usr/bin/wine ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL wine"
+if [ -f /usr/bin/wine ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+winetrmenu () {
+if [ -f /usr/bin/winetricks ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL winetricks"
+if [ -f /usr/bin/winetricks ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+
+yabamenu () {
+if [ -f /usr/bin/yabause-qt ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL yabause yabause-qt"
+if [ -f /usr/bin/yabause-qt ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+zsnesmenu () {
+if [ -f /usr/bin/zsnes ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+mainmenu
+else
+$SPARKYXTERM -e "$INSTALL zsnes"
+if [ -f /usr/bin/zsnes ]; then
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+mainmenu
+else
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+fi
+fi
+mainmenu
+}
+
+mainmenu
