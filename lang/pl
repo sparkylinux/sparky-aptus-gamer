@@ -48,7 +48,8 @@ LOCAL41="Cyfrowa platforma gier itch.io"
 LOCAL42="Program VoIP do komunikacji audio i wideo pomiędzy użytkownikami"
 LOCAL43="Lutris to platforma gier dla GNU/Linux"
 LOCAL44="GZDoom to otwarto-źródłowy port ZDoom rozwijany przez Christophera Oelckersa"
-
+LOCAL45="Ta aplikacja nie może być zainstalowany na obecnej wersji Debiana/Sparky."
+LOCAL46="Wyjście..."
 ### .desktop file, również do przetłumaczenia
 # Name[pl_PL]=
 # Comment[pl_PL]=Zainstaluj emulatory gier jednym klikiem

@@ -4,7 +4,7 @@
 # It lets you install game emulators from Debian and Sparky repository
 # Created by Paweł "pavroo" Pijanowski 2014/11/16
 # Copyright 2014, 2015, 2016, 2017 under the GNU GPL2 License
-# Last updated 2017/08/27
+# Last updated 2017/11/10
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-gamer"
@@ -53,15 +53,9 @@ else
 SPARKYXTERM="x-terminal-emulator"
 fi
 INSTALL="apt-get install"
+ARCHARM="`uname -m | grep arm`"
 
 ## Status of the application to be displayed in the main menu ###
-
-if [ -f /usr/bin/advmenu ]; then
-ADVANCE1="$LOCAL9"
-else
-ADVANCE1=""
-fi
-
 if [ -f /usr/bin/atari800 ]; then
 ATARI1="$LOCAL9"
 else
@@ -158,12 +152,6 @@ else
 MEDNA1=""
 fi
 
-if [ -f /usr/games/mess ]; then
-MESS1="$LOCAL9"
-else
-MESS1=""
-fi
-
 if [ -f /usr/games/nestopia ]; then
 NES1="$LOCAL9"
 else
@@ -251,7 +239,6 @@ fi
 
 mainmenu () {
 CHOICES=`$MENU1 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL10:" \
-AdvanceMENU "$LOCAL11" "$ADVANCE1" \
 Atari800 "$LOCAL12" "$ATARI1" \
 DeSmuME "$LOCAL13" "$DESM1" \
 DOSBox "$LOCAL15" "$DOSBOX1" \
@@ -268,7 +255,6 @@ Kega_Fusion "$LOCAL23" "$KEGA1" \
 Lutris "$LOCAL43" "$LUTRIS1" \
 MAME "$LOCAL24" "$MAME1" \
 Mednafen "$LOCAL25" "$MEDNA1" \
-MESS "$LOCAL26" "$MESS1" \
 Nestopia "$LOCAL27" "$NES1" \
 PCSX2 "$LOCAL28" "$PCSX1" \
 PCSXR "$LOCAL29" "$PCSXR1" \
@@ -290,9 +276,7 @@ else
 exit 0
 fi
 
-if [ "$CHOICE" = "AdvanceMENU" ]; then
-advancemenu
-elif [ "$CHOICE" = "Atari800" ]; then
+if [ "$CHOICE" = "Atari800" ]; then
 atarimenu
 elif [ "$CHOICE" = "DeSmuME" ]; then
 desmmenu
@@ -324,8 +308,6 @@ elif [ "$CHOICE" = "MAME" ]; then
 mamemenu
 elif [ "$CHOICE" = "Mednafen" ]; then
 medmenu
-elif [ "$CHOICE" = "MESS" ]; then
-messmenu
 elif [ "$CHOICE" = "Nestopia" ]; then
 nesmenu
 elif [ "$CHOICE" = "PCSX2" ]; then
@@ -357,22 +339,6 @@ zsnesmenu
 else
 exit 0
 fi
-}
-
-advancemenu () {
-if [ -f /usr/bin/advmenu ]; then
-$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
-mainmenu
-else
-$SPARKYXTERM -e "$INSTALL advancemenu"
-if [ -f /usr/bin/advmenu ]; then
-$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
-mainmenu
-else
-$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
-fi
-fi
-mainmenu
 }
 
 atarimenu () {
@@ -424,6 +390,10 @@ mainmenu
 }
 
 dosemumenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/dosemu ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
@@ -440,6 +410,10 @@ mainmenu
 }
 
 epsxemenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/ePSXe ] || [ -f /usr/bin/epsxe_x64 ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
@@ -504,6 +478,10 @@ mainmenu
 }
 
 gzdoommenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/games/gzdoom ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
@@ -552,6 +530,10 @@ mainmenu
 }
 
 itchmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/itch ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
@@ -568,11 +550,15 @@ mainmenu
 }
 
 kegamenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/games/kega-fusion ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL kega-fusion:i386"
+$SPARKYXTERM -e "$INSTALL kega-fusion"
 if [ -f /usr/games/kega-fusion ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -584,6 +570,10 @@ mainmenu
 }
 
 lutrismenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/lutris ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
@@ -631,22 +621,6 @@ fi
 mainmenu
 }
 
-messmenu () {
-if [ -f /usr/games/mess ]; then
-$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
-mainmenu
-else
-$SPARKYXTERM -e "$INSTALL mess"
-if [ -f /usr/games/mess ]; then
-$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
-mainmenu
-else
-$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
-fi
-fi
-mainmenu
-}
-
 nesmenu () {
 if [ -f /usr/games/nestopia ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
@@ -664,6 +638,10 @@ mainmenu
 }
 
 pcsxmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/games/PCSX2 ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
@@ -713,6 +691,10 @@ mainmenu
 }
 
 ppssmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/games/ppsspp ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
@@ -761,6 +743,10 @@ mainmenu
 }
 
 teamspeakmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/teamspeak-installer ]; then
 	/usr/bin/teamspeak-installer
 else
@@ -856,6 +842,10 @@ mainmenu
 }
 
 zsnesmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL45\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/zsnes ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu

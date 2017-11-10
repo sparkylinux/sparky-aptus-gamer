@@ -1,8 +1,7 @@
 # Arquivo de localização para Portugues de Portugal do Sparky APTus Gamer.
 # Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Monday 01 February 22:12:30 WET 2016
 # Sob a Licença GNU GPL v2
-# Last update 2017/08/27 by pavroo
-
+# Last update 2017/11/10 by pavroo
 LOCAL1="Nome"
 LOCAL2="Descrição"
 LOCAL3="Status"
@@ -47,7 +46,8 @@ LOCAL41="The best way to play itch.io games"
 LOCAL42="VoIP software for audio communication between users"
 LOCAL43="Lutris is a gaming platform for GNU/Linux"
 LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
-
+LOCAL45="It can not be installed on your version of Debian/Sparky."
+LOCAL46="Exiting..."
 ### Arquivo a ser traduzido também .desktop
 # Name[pt_PT]=
 # Comment[pt_PT]=Instale emuladores de jogos através de um clique

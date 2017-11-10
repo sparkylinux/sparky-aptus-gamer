@@ -31,5 +31,5 @@ else
 	if [ ! -d /usr/share/sparky/sparky-aptus-gamer ]; then
 		mkdir -p /usr/share/sparky/sparky-aptus-gamer
 	fi
-	cp sparky-aptus-gamer/* /usr/share/sparky/sparky-aptus-gamer/
+	cp lang/* /usr/share/sparky/sparky-aptus-gamer/
 fi
