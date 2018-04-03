@@ -3,8 +3,8 @@
 # Sparky APTus Gamer is a simply GUI frontend for APT-GET
 # It lets you install game emulators from Debian and Sparky repository
 # Created by Paweł "pavroo" Pijanowski 2014/11/16
-# Copyright 2014, 2015, 2016, 2017 under the GNU GPL2 License
-# Last updated 2017/11/10
+# Copyright 2014-2018 under the GNU GPL2 License
+# Last updated 2018/03/29
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-gamer"
@@ -31,7 +31,6 @@ else
 fi
 
 testroot="`whoami`"
-
 if [ "$testroot" != "root" ]; then
 	/usr/bin/remsu $0 &
 fi
@@ -47,10 +46,11 @@ TITLETEXT="APTus Gamer"
 TEXTBREAK="$LOCAL5"
 TEXTDONE="$LOCAL6"
 TEXTSTOP="$LOCAL8"
-if [ -f /opt/sparky/sparky-xterm ]; then
-. /opt/sparky/sparky-xterm
+if [ -f /usr/bin/sparky-xterm ];then
+	SPARKYXTERM="/usr/bin/sparky-xterm"
 else
-SPARKYXTERM="x-terminal-emulator"
+	echo "sparky-xterm is missing... Exiting..."
+	exit 1
 fi
 INSTALL="apt-get install"
 ARCHARM="`uname -m | grep arm`"
@@ -346,7 +346,7 @@ if [ -f /usr/bin/atari800 ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL atari800"
+$SPARKYXTERM "$INSTALL atari800"
 if [ -f /usr/bin/atari800 ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -362,7 +362,7 @@ if [ -f /usr/games/desmume ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL desmume"
+$SPARKYXTERM "$INSTALL desmume"
 if [ -f /usr/games/desmume ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -378,7 +378,7 @@ if [ -f /usr/bin/dosbox ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL dosbox"
+$SPARKYXTERM "$INSTALL dosbox"
 if [ -f /usr/bin/dosbox ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -398,7 +398,7 @@ if [ -f /usr/bin/dosemu ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL dosemu"
+$SPARKYXTERM "$INSTALL dosemu"
 if [ -f /usr/bin/dosemu ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -418,7 +418,7 @@ if [ -f /usr/bin/ePSXe ] || [ -f /usr/bin/epsxe_x64 ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL epsxe"
+$SPARKYXTERM "$INSTALL epsxe"
 if [ -f /usr/bin/ePSXe ] || [ -f /usr/bin/epsxe_x64 ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -434,7 +434,7 @@ if [ -f /usr/games/fceux ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL fceux"
+$SPARKYXTERM "$INSTALL fceux"
 if [ -f /usr/games/fceux ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -450,7 +450,7 @@ if [ -f /usr/bin/fs-uae-arcade ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL fs-uae-arcade"
+$SPARKYXTERM "$INSTALL fs-uae-arcade"
 if [ -f /usr/bin/fs-uae-arcade ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -466,7 +466,7 @@ if [ -f /usr/bin/gnome-video-arcade ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL gnome-video-arcade"
+$SPARKYXTERM "$INSTALL gnome-video-arcade"
 if [ -f /usr/bin/gnome-video-arcade ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -486,7 +486,7 @@ if [ -f /usr/games/gzdoom ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL gzdoom"
+$SPARKYXTERM "$INSTALL gzdoom"
 if [ -f /usr/games/gzdoom ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -502,7 +502,7 @@ if [ -f /usr/bin/hatari ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL hatari"
+$SPARKYXTERM "$INSTALL hatari"
 if [ -f /usr/bin/hatari ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -518,7 +518,7 @@ if [ -f /usr/bin/higan-accuracy ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL higan"
+$SPARKYXTERM "$INSTALL higan"
 if [ -f /usr/bin/higan-accuracy ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -538,7 +538,7 @@ if [ -f /usr/bin/itch ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL itch"
+$SPARKYXTERM "$INSTALL itch"
 if [ -f /usr/bin/itch ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -558,7 +558,7 @@ if [ -f /usr/games/kega-fusion ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL kega-fusion"
+$SPARKYXTERM "$INSTALL kega-fusion"
 if [ -f /usr/games/kega-fusion ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -578,7 +578,7 @@ if [ -f /usr/bin/lutris ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL lutris"
+$SPARKYXTERM "$INSTALL lutris"
 if [ -f /usr/bin/lutris ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -594,7 +594,7 @@ if [ -f /usr/games/mame ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL mame"
+$SPARKYXTERM "$INSTALL mame"
 if [ -f /usr/games/mame ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -610,7 +610,7 @@ if [ -f /usr/games/mednafen ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL mednafen"
+$SPARKYXTERM "$INSTALL mednafen"
 if [ -f /usr/games/mednafen ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -626,7 +626,7 @@ if [ -f /usr/games/nestopia ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL nestopia"
+$SPARKYXTERM "$INSTALL nestopia"
 if [ -f /usr/games/nestopia ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -646,7 +646,7 @@ if [ -f /usr/games/PCSX2 ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL pcsx2"
+$SPARKYXTERM "$INSTALL pcsx2"
 if [ -f /usr/games/PCSX2 ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -662,7 +662,7 @@ if [ -f /usr/games/pcsxr ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL pcsxr"
+$SPARKYXTERM "$INSTALL pcsxr"
 if [ -f /usr/games/pcsxr ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -679,7 +679,7 @@ if [ -f /usr/bin/playonlinux ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL playonlinux"
+$SPARKYXTERM "$INSTALL playonlinux"
 if [ -f /usr/bin/playonlinux ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -699,7 +699,7 @@ if [ -f /usr/games/ppsspp ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL ppsspp-sdl"
+$SPARKYXTERM "$INSTALL ppsspp-sdl"
 if [ -f /usr/games/ppsspp ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -715,7 +715,7 @@ if [ -f /usr/games/steam ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL steam"
+$SPARKYXTERM "$INSTALL steam"
 if [ -f /usr/games/steam ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -731,7 +731,7 @@ if [ -f /usr/bin/stella ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL stella"
+$SPARKYXTERM "$INSTALL stella"
 if [ -f /usr/bin/stella ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -750,7 +750,7 @@ fi
 if [ -f /usr/bin/teamspeak-installer ]; then
 	/usr/bin/teamspeak-installer
 else
-	$SPARKYXTERM -e "$INSTALL teamspeak-installer"
+	$SPARKYXTERM "$INSTALL teamspeak-installer"
 	if [ -f /usr/bin/teamspeak-installer ]; then
 		/usr/bin/teamspeak-installer
 	else
@@ -765,7 +765,7 @@ if [ -f /usr/bin/gvba ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL visualboyadvance visualboyadvance-gtk"
+$SPARKYXTERM "$INSTALL visualboyadvance visualboyadvance-gtk"
 if [ -f /usr/bin/gvba ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -781,7 +781,7 @@ if [ -f /usr/bin/virtualjaguar ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL virtualjaguar"
+$SPARKYXTERM "$INSTALL virtualjaguar"
 if [ -f /usr/bin/virtualjaguar ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -797,7 +797,7 @@ if [ -f /usr/bin/wine ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL wine"
+$SPARKYXTERM "$INSTALL wine"
 if [ -f /usr/bin/wine ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -813,7 +813,7 @@ if [ -f /usr/bin/winetricks ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL winetricks"
+$SPARKYXTERM "$INSTALL winetricks"
 if [ -f /usr/bin/winetricks ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -830,7 +830,7 @@ if [ -f /usr/bin/yabause-qt ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL yabause yabause-qt"
+$SPARKYXTERM "$INSTALL yabause yabause-qt"
 if [ -f /usr/bin/yabause-qt ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu
@@ -850,7 +850,7 @@ if [ -f /usr/bin/zsnes ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 mainmenu
 else
-$SPARKYXTERM -e "$INSTALL zsnes"
+$SPARKYXTERM "$INSTALL zsnes"
 if [ -f /usr/bin/zsnes ]; then
 $DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 mainmenu

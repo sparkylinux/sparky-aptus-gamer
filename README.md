@@ -1,7 +1,7 @@
 Sparky APTus Gamer
 This lets you quick install game emulators and other applications for gaming.
 
-Copyright (C) 2014-2017 Paweł Pijanowski and others, see copyright file.
+Copyright (C) 2014-2018 Paweł Pijanowski and others, see copyright file.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ Dependencies:
 apt
 grep
 sparky-remsu
-sparky-xterm
+sparky-xterm (>= 0.2.0)
 yad
 
 Install:
