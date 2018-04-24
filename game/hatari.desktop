@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Hatari
+Comment=Atari ST, STE, TT and Falcon emulator for Linux and other systems
+Comment[de]=Atari ST, STE, TT und Falcon Emulator für Linux und andere Systeme
+Comment[es]=Emulador de Atari ST, STE, TT y Falcon para Linux y otros sistemas
+Comment[fr]=Émulateur d'Atari ST, STE, TT et Falcon pour Linux et autres systèmes
+Comment[it]=Emulatore per Atari ST, STE, TT e Falcon per linux ed altri sistemi
+Comment[ja]=Linux・他システム向け Atari ST・STE・TT・Falcon エミュレーター
+Comment[pl]=Emulator Atari ST, STE, TT oraz Falcon dla Linux i innych systemów
+Comment[pt_BR]=Emulador Linux para o Atari ST, STE, TT e Falcon e outros sistemas
+Comment[pt_PT]=Atari ST, STE, TT e emulador Falcon para Linux e outros sistemas
+Comment[ru]=Эмулятор Atari ST, STE, TT и Falcon для Linux и других систем
+Exec=remsu /usr/bin/sparky-aptus-gamer hatari
+Icon=hatari
+Type=Application
+Categories=Applications;Game

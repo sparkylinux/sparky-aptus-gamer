@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Winetricks
+Comment=A POSIX shell script 'package manager' for WINE to install some Windows software easily
+Comment[de]=Ein POSIX Shell Script 'Paket Manager' für WINE um Windows Programme einfacher zu installieren
+Comment[es]=Un script POSIX 'administrador de paquetes' de consola de WINE para instalar algunos programas Windows fácilmente
+Comment[fr]=Un script POSIX  'gestionnaire de paquets' pour WINE afin d'installer facilement certains logiciels Windows
+Comment[it]=Uno script POSIX che avvia un 'package manager' per WINE per installare alcuni software Windows facilmente
+Comment[ja]=POSIX シェルスクリプト パッケージマネージャー for WINE による Windows ソフトウェアのインストール
+Comment[pl]=Skrypt dla WINE instalujący wiele aplikacji systemu Windows
+Comment[pt_BR]=Um shell script POSIX 'package manager' para o WINE poder instalar algum software do Windows facilmente
+Comment[pt_PT]=Um script shell POSIX 'gestor de pacotes' para o WINE para instalar algum software do Windows facilmente
+Comment[ru]=POSIX-скрипт оболочки 'менеджер пакетов' для WINE, используемый для лёгкой установки некторых программ Windows
+Exec=remsu /usr/bin/sparky-aptus-gamer winetricks
+Icon=winetricks
+Type=Application
+Categories=Applications;Game

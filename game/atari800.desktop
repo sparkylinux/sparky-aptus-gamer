@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Atari800
+Comment=Emulator for Atari 8-bit systems, XE Game System and Atari 5200 SuperSystem console
+Comment[de]=Emulator für Atari 8-bit Systeme, XE Game System and Atari 5200 SuperSystem Konsole
+Comment[es]=Emulador para sistemas Atari de 8 bits, XE Game System y la consola Atari 5200 SuperSystem
+Comment[fr]=Émulateur pour Atari 8-bit systems, XE Game System et la console Atari 5200 SuperSystem
+Comment[it]=Emulatore per sistemi Atari a 8-bit, XE Game System ed Atari 5200 SuperSystem console
+Comment[ja]=Atari 8-bit systems, XE Game System and Atari 5200 SuperSystem コンソールエミュレータ
+Comment[pl]=Emulator konsoli Atari 8-bit systems, XE Game System i Atari 5200 SuperSystem
+Comment[pt_BR]=Emulador para os sistemas Atari 8-bits, XE Game System e  console do Atari 5200 SuperSystem
+Comment[pt_PT]=Emulator para sistemas de 8 bits de Atari, consola SuperSystem XE sistema de jogo e Atari 5200
+Comment[ru]=Эмулятор для 8-битных систем Atari, XE Game System и консоли Atari 5200 SuperSystem
+Exec=remsu /usr/bin/sparky-aptus-gamer atari800
+Icon=applications-games
+Type=Application
+Categories=Applications;Game

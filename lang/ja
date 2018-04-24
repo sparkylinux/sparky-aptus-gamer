@@ -2,7 +2,7 @@
 # Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Under the GNU GPL v2
 # Translated to Japanese by BALLOON a.k.a. Fu-sen.
-# Last update 2017/11/10 by pavroo
+# Last update 2018/04/24 by pavroo
 LOCAL1="名前"
 LOCAL2="説明"
 LOCAL3="状況"
@@ -31,7 +31,7 @@ LOCAL25="Atari Lynx・GameBoy・NES・SNES・PC-FX・SEGA・SONY PlayStation・�
 LOCAL26="さまざまなコンソールやコンピューターシステム用エミュレーター"
 LOCAL27="Nintendo Entertainment System・ファミコンエミュレーター"
 LOCAL28="Sony PlayStation エミュレーター"
-LOCAL29="PCSX-Reloaded - SPNY PlayStation エミュレーター"
+LOCAL29="PCSX-Reloaded - SONY PlayStation エミュレーター"
 LOCAL30="Wine フロントエンド"
 LOCAL31="Windows・MacOS・Linux・Android 向けオープンソース PSP エミュレータ"
 LOCAL32="Steam ソフトウェアディストリビューションサービスランチャー"
@@ -39,7 +39,7 @@ LOCAL33="SDL・X ウインドウシステム Atari 2600 エミュレーター"
 LOCAL34="Game Boy Advance エミュレーター"
 LOCAL35="クロスプラットフォーム Atari's infamous Jaguar コンソールエミュレータ"
 LOCAL36="Windows API の実装"
-LOCAL37=" POSIX シェルスクリプト パッケージマネージャー for WINE による Windows ソフトウェアのインストール"
+LOCAL37="POSIX シェルスクリプト パッケージマネージャー for WINE による Windows ソフトウェアのインストール"
 LOCAL38="Sega Saturn エミュレーター"
 LOCAL39="Super Nintendo Entertainment System エミュレーター"
 LOCAL40="Linux 用 Desura クライアントのインストールを完了するためには、 \nメニュー → インターネット → Desura Installer を進めて下さい。\n\n終了します..."
@@ -49,6 +49,15 @@ LOCAL43="Lutris is a gaming platform for GNU/Linux"
 LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
 LOCAL45="It can not be installed on your version of Debian/Sparky."
 LOCAL46="終了します..."
+LOCAL47="Remove"
+LOCAL48="Reinstall"
+LOCAL49="Install"
+LOCAL50="This package is already installed."
+LOCAL51="What would you like to do now?"
+LOCAL52="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the main repository server is down.\n\nCheck it out and try again."
+LOCAL53="Should I install the package you have chosen?"
+LOCAL54="The package has been successfully installed."
+LOCAL55="This package is not available for your system version."
 ### .desktop file to be translated too
 # Name[ja_JP]=
 # Comment[ja_JP]=ワンクリックでゲームエミュレーターをインストール

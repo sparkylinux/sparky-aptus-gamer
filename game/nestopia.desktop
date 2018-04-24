@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Nestopia
+Comment=Nintendo Entertainment System/Famicom emulator
+Comment[es]=Emulador de Nintendo Entertainment System/Famicom
+Comment[fr]=Émulateur pour Nintendo Entertainment System/Famicom
+Comment[it]=Emulatore per Nintendo Entertainment System/Famicom
+Comment[ja]=Nintendo Entertainment System・ファミコンエミュレーター
+Comment[pl]=Emulator Nintendo Entertainment System/Famicom
+Comment[pt_BR]=Emulador para o Nintendo Entertainment System/Famicom
+Comment[pt_PT]=Emulador para sistema de entretenimento Nintendo/Famicom
+Comment[ru]=Эмулятор Nintendo Entertainment System/Famicom
+Exec=remsu /usr/bin/sparky-aptus-gamer nestopia
+Icon=nestopia
+Type=Application
+Categories=Applications;Game

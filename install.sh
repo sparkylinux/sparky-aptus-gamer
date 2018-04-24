@@ -16,18 +16,14 @@
 
 if [ "$1" = "uninstall" ]; then
    	rm -f /usr/bin/sparky-aptus-gamer
-	rm -r /usr/lib/sparky-aptus/inst/sparky-aptus-gamer.desktop
-	rm -f /usr/share/applications/sparky-aptus-gamer.desktop
-	rm -f /usr/share/menu/sparky-aptus-gamer
 	rm -rf /usr/share/sparky/sparky-aptus-gamer
+	rm -f /usr/lib/sparky-aptus/game/*
 else
 	cp bin/sparky-aptus-gamer /usr/bin/sparky-aptus-gamer
-	if [ ! -d /usr/lib/sparky-aptus/inst ]; then
-		mkdir -p /usr/lib/sparky-aptus/inst
+	if [ ! -d /usr/lib/sparky-aptus/game ]; then
+		mkdir -p /usr/lib/sparky-aptus/game
 	fi
-	cp lib/sparky-aptus-gamer.desktop /usr/lib/sparky-aptus/inst/sparky-aptus-gamer.desktop
-	cp lib/sparky-aptus-gamer.desktop /usr/share/applications/sparky-aptus-gamer.desktop
-	cp menu/sparky-aptus-gamer /usr/share/menu/sparky-aptus-gamer
+	cp game/* /usr/lib/sparky-aptus/game/
 	if [ ! -d /usr/share/sparky/sparky-aptus-gamer ]; then
 		mkdir -p /usr/share/sparky/sparky-aptus-gamer
 	fi

@@ -1,7 +1,7 @@
 # Файл русской локализации для Sparky APTus Gamer.
 # Copyright 2016 Igor Klyushnyov <inklu@yandex.ru> 2016/01/23
 # Под лицензией GNU GPL v2
-# Last update 2017/11/10 by pavroo
+# Last update 2018/04/24 by pavroo
 LOCAL1="Имя"
 LOCAL2="Описание"
 LOCAL3="Статус"
@@ -48,6 +48,15 @@ LOCAL43="Lutris is a gaming platform for GNU/Linux"
 LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
 LOCAL45="It can not be installed on your version of Debian/Sparky."
 LOCAL46="Завершение..."
+LOCAL47="Remove"
+LOCAL48="Reinstall"
+LOCAL49="Install"
+LOCAL50="This package is already installed."
+LOCAL51="What would you like to do now?"
+LOCAL52="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the main repository server is down.\n\nCheck it out and try again."
+LOCAL53="Should I install the package you have chosen?"
+LOCAL54="The package has been successfully installed."
+LOCAL55="This package is not available for your system version."
 ### .desktop file to be translated too
 # Name[ru_RU]=
 # Comment[ru_RU]=Установка эмуляторов игр одним щелчком

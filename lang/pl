@@ -2,8 +2,7 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Under the GNU GPL v2
 # Translated to Polish by pavroo
-# Last update 2017/08/27 by pavroo
-
+# Last update 2018/04/24 by pavroo
 LOCAL1="Nazwa"
 LOCAL2="Opis"
 LOCAL3="Status"
@@ -37,7 +36,7 @@ LOCAL30="Interfejs graficzny dla Wine"
 LOCAL31="Otwarto-źródłowy emulator PSP dostępny dla Windows, MacOS, Linux i Android"
 LOCAL32="Instalator platformy Steam dla Linux"
 LOCAL33="Emulator Atari 2600 dla SDL oraz X Window System"
-LOCAL34="W pełni wyposażony emulator Game Boy Advance"
+LOCAL34="W pełni funkcjonalny emulator Game Boy Advance"
 LOCAL35="Wieloplatformowy emulator dla konsoli Atari Jaguar"
 LOCAL36="Implementacja Windows API"
 LOCAL37="Skrypt dla WINE instalujący wiele aplikacji systemu Windows"
@@ -50,6 +49,15 @@ LOCAL43="Lutris to platforma gier dla GNU/Linux"
 LOCAL44="GZDoom to otwarto-źródłowy port ZDoom rozwijany przez Christophera Oelckersa"
 LOCAL45="Ta aplikacja nie może być zainstalowany na obecnej wersji Debiana/Sparky."
 LOCAL46="Wyjście..."
+LOCAL47="Usuń"
+LOCAL48="Reinstaluj"
+LOCAL49="Zainstaluj"
+LOCAL50="Ten pakiet jest już zainstalowany."
+LOCAL51="Co chcesz teraz zrobić?"
+LOCAL52="Coś poszło źle! \nPrawdopodobnie zatrzymałeś instalację lub połączenie z internetem jest uszkodzone lub ten pakiet nie jest dostępny dla wersji twojego systemu.\nSprawdź to i spróbuj ponownie."
+LOCAL53="Czy mam zainstalować wybrany pakiet?"
+LOCAL54="Pakiet został poprawnie zainstalowany."
+LOCAL55="Ten pakiet nie jest dostępny dla wersji twojego systemu."
 ### .desktop file, również do przetłumaczenia
 # Name[pl_PL]=
 # Comment[pl_PL]=Zainstaluj emulatory gier jednym klikiem

@@ -2,7 +2,7 @@
 # Copyright 2015 Pawelâ€š "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Sob a licença GNU GPL v2
 # Traduzido  por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 2015/12/20
-# Last update 2017/11/10 by pavroo
+# Last update 2018/04/24 by pavroo
 LOCAL1="Nome"
 LOCAL2="Descrição"
 LOCAL3="Status"
@@ -24,7 +24,7 @@ LOCAL17="ePSXe (Emulador PSX melhorado) é um emulador console do video-game Pla
 LOCAL18="Emulador Nintendo Entertainment System (NES), Famicom e Famicom Disk System (FDS)"
 LOCAL19="Emulador multi-plataforma para o Amiga"
 LOCAL20="Frontend simples do MAME"
-LOCAL21="Emulador  Linux para o Atari ST, STE, TT e Falcon e outros sistemas"
+LOCAL21="Emulador Linux para o Atari ST, STE, TT e Falcon e outros sistemas"
 LOCAL22="Emulador para os Nintendos SNES, NES, Gameboy, Gameboy Color e Gameboy Advance"
 LOCAL23="Emulador para o Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD"
 LOCAL24="Emulador de hardware o qual reproduz fielmente o comportamento de muitas máquinas arcaicas"
@@ -35,8 +35,8 @@ LOCAL28="Emulador para o Sony PlayStation"
 LOCAL29="Emulador PCSX-Reloaded para o Sony PlayStation"
 LOCAL30="Front-end para o Wine"
 LOCAL31="Um emulador em código aberto para o PSP  disponível para o Windows, MacOS, Linux e Android"
-LOCAL32="Lançador para o serviço de distribuição do software  Steam"
-LOCAL33="Emulador para o Atari 2600  para o SDL e o Sistema X Window"
+LOCAL32="Lançador para o serviço de distribuição do software Steam"
+LOCAL33="Emulador para o Atari 2600 para o SDL e o Sistema X Window"
 LOCAL34="Emulador avançado completo para o Game Boy"
 LOCAL35="Emulador multi-plataforma para a infâmia console do Jaguar da  Atari"
 LOCAL36="Implementação para o Windows API"
@@ -50,6 +50,15 @@ LOCAL43="Lutris is a gaming platform for GNU/Linux"
 LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
 LOCAL45="It can not be installed on your version of Debian/Sparky."
 LOCAL46="Exiting..."
+LOCAL47="Remove"
+LOCAL48="Reinstall"
+LOCAL49="Install"
+LOCAL50="This package is already installed."
+LOCAL51="What would you like to do now?"
+LOCAL52="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the main repository server is down.\n\nCheck it out and try again."
+LOCAL53="Should I install the package you have chosen?"
+LOCAL54="The package has been successfully installed."
+LOCAL55="This package is not available for your system version."
 ### .desktop file to be translated too
 # Name[pt_BR]=
 # Comment[pt_BR]=Instalar emuladores de jogos em apenas um click

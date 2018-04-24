@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=PCSXR
+Comment=PCSX-Reloaded - Sony PlayStation emulator
+Comment[es]=PCSX-Reloaded - emulador de Sony PlayStation
+Comment[fr]=Émulateur pour PCSX-Reloaded - Sony PlayStation
+Comment[it]=Emulatore per PCSX-Reloaded - Sony PlayStation
+Comment[ja]=PCSX-Reloaded - SONY PlayStation エミュレーター
+Comment[pl]=PCSX-Reloaded - emulator Sony PlayStation
+Comment[pt_BR]=Emulador PCSX-Reloaded para o Sony PlayStation
+Comment[pt_PT]=Emulador PCSX-Reloaded - Sony PlayStation
+Comment[ru]=Эмулятор PCSX-Reloaded - Sony PlayStation
+Comment[zh_CN]=Sony PlayStation 模拟器
+Comment[zh_TW]=Sony PlayStation 模擬器
+Exec=remsu /usr/bin/sparky-aptus-gamer pcsxr
+Icon=pcsxr-icon
+Type=Application
+Categories=Applications;Game

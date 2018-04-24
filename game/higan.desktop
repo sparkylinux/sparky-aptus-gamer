@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Higan
+Comment=Emulator for Nintendos SNES, NES, Gameboy, Gameboy Color and Gameboy Advance
+Comment[de]=Emulator für Nintendos SNES, NES, Gameboy, Gameboy Color und Gameboy Advance
+Comment[es]=Emulador para Nintendos SNES, NES, Gameboy, Gameboy Color y Gameboy Advance
+Comment[fr]=Émulateur pour Nintendos SNES, NES, Gameboy, Gameboy Color and Gameboy Advance
+Comment[it]=Emulatore per Nintendos SNES, NES, Gameboy, Gameboy Color e Gameboy Advance
+Comment[ja]=Nintendos SNES・NES・Gameboy・Gameboy Color・Gameboy Advance 向けエミュレーター
+Comment[pl]=Emulator Nintendos SNES, NES, Gameboy, Gameboy Color i Gameboy Advance
+Comment[pt_BR]=Emulador para os Nintendos SNES, NES, Gameboy, Gameboy Color e Gameboy Advance
+Comment[pt_PT]=Emulador para Nintendo SNES, NES, Game Boy, Game Boy Color e Game Boy Advance
+Comment[ru]=Эмулятор для Nintendos SNES, NES, Gameboy, Gameboy Color и Gameboy Advance
+Exec=remsu /usr/bin/sparky-aptus-gamer higan
+Icon=higan
+Type=Application
+Categories=Applications;Game

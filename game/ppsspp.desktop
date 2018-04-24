@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=PPSSPP
+Comment=An open source PSP emulator available for Windows, MacOS, Linux and Android
+Comment[de]=Ein Open-Source PSP Emulator, erhältlich für Windows, MacOS, Linux und Android
+Comment[es]=Un emulador PSP de código abierto disponible para Windows, MacOS, Linux y Android
+Comment[fr]=Émulateur au code source libre de PSP disponible pour Windows, MacOS, Linux et Android
+Comment[it]=Un emulatore open source per PSP sviluppato per Windows, MacOS, Linux e Android
+Comment[ja]=Windows・MacOS・Linux・Android 向けオープンソース PSP エミュレータ
+Comment[pl]=Otwarto-źródłowy emulator PSP dostępny dla Windows, MacOS, Linux i Android
+Comment[pt_BR]=Um emulador em código aberto para o PSP  disponível para o Windows, MacOS, Linux e Android
+Comment[pt_PT]=Uma fonte do emulador de PSP aberto disponível para Windows, MacOS, Linux e Android
+Comment[ru]=Эмулятор PSP с открытым кодом, доступный для Windows, MacOS, Linux и Android
+Exec=remsu /usr/bin/sparky-aptus-gamer ppsspp
+Icon=ppsspp
+Type=Application
+Categories=Applications;Game

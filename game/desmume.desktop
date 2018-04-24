@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=DeSmuME (Gtk)
+Comment=Nintento DS emulator
+Comment[es]=Emulador Nintendo DS
+Comment[fr]=Émulateur pour Nintendo DS
+Comment[it]=Emulatore per Nintendo DS
+Comment[ja]=Nintendo DS エミュレーター
+Comment[pl]=Emulator Nintendo DS
+Comment[pt_BR]=Emulador Nintendo DS
+Comment[pt_PT]=Emulador de Nintendo DS
+Comment[ru]=Эмулятор Nintendo DS
+Exec=remsu /usr/bin/sparky-aptus-gamer desmume
+Icon=DeSmuME
+Type=Application
+Categories=Applications;Game

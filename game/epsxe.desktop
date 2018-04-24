@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=ePSXe
+Comment=ePSXe (enhanced PSX emulator) is a PlayStation video game console emulator
+Comment[de]=ePSXe (enhanced PSX Emulator) ist ein PlayStation Konsolen Emulator
+Comment[es]=ePSXe (emulador PSX mejorado) es un emulador de consola de video juegos PlayStation
+Comment[fr]=ePSXe (émulateur  PSX amélioré ) est un émulateur de console de jeux vidéos PlayStation
+Comment[it]=ePSXe (enhanced PSX emulator) è un emulatore per la console PlayStation
+Comment[ja]=ePSXe (enhanced PSX emulator) PlayStation ビデオゲームコンソールエミュレーター
+Comment[pl]=ePSXe (unowocześniony emulator PSX) jest emulatorem konsoli gier wideo PlayStation
+Comment[pt_BR]=ePSXe (Emulador PSX melhorado) é um emulador console do video-game PlayStation
+Comment[pt_PT]=ePSXe (emulador melhorado para PSX) é (consola) emulador para um vídeo jogo da PlayStation
+Comment[ru]=ePSXe (улучшенный эмулятор PSX) - это консольный эмулятор видеоигр PlayStation
+Exec=remsu /usr/bin/sparky-aptus-gamer epsxe
+Icon=applications-games
+Type=Application
+Categories=Applications;Game
