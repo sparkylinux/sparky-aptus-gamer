@@ -20,6 +20,7 @@ Dependencies:
 -------------
 apt
 grep
+iputils-ping
 sparky-remsu
 sparky-xterm (>= 0.2.0)
 yad
