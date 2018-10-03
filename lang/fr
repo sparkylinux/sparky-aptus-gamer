@@ -1,7 +1,7 @@
 ﻿# Fichier de localisation française de Sparky APTus Gamer.
 # Copyright 2016 hiver <hiver@club-internet.fr> 2016/06/05
 # Sous licence GNU GPL v2
-# Last update 2018/04/24 by pavroo
+# Dernière mise à jour 2018/09/25
 LOCAL1="Nom"
 LOCAL2="Description"
 LOCAL3="État"
@@ -19,7 +19,7 @@ LOCAL14="Plateforme de distribution numérique pour  Windows, Linux et systèmes
 LOCAL15="Émulateur DOS pour BeOS, Linux, Mac OS X, OS2, et Windows"
 LOCAL16="Émulateur DOS pour Linux"
 LOCAL17="ePSXe (émulateur  PSX amélioré ) est un émulateur de console de jeux vidéos PlayStation"
-LOCAL18="Émulateur pour Nintendo Entertainment System (NES), Famicom et Famicom Disk System (FDS)"
+LOCAL18="Émulateur pour Nintendo Entertainment System (NES), Famicom et Famicom Disk System (FDS) "
 LOCAL19="Émulateur multiplatforme Amiga"
 LOCAL20="Interface MAME simple"
 LOCAL21="Émulateur d'Atari ST, STE, TT et Falcon pour Linux et autres systèmes"
@@ -43,20 +43,20 @@ LOCAL38="Émulateur de Sega Saturn"
 LOCAL39="Émulateur pour Super Nintendo Entertainment System"
 LOCAL40="Pour terminer l'installation du client Desura pour Linux, \naller dans le  Menu-> Internet-> Installateur Desura\n\nSortie..."
 LOCAL41="La meilleure façon de jouer les jeux itch.io"
-LOCAL42="VoIP software for audio communication between users"
-LOCAL43="Lutris is a gaming platform for GNU/Linux"
-LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
-LOCAL45="It can not be installed on your version of Debian/Sparky."
-LOCAL46="Exiting..."
-LOCAL47="Remove"
-LOCAL48="Reinstall"
-LOCAL49="Install"
-LOCAL50="This package is already installed."
-LOCAL51="What would you like to do now?"
-LOCAL52="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the main repository server is down.\n\nCheck it out and try again."
-LOCAL53="Should I install the package you have chosen?"
-LOCAL54="The package has been successfully installed."
-LOCAL55="This package is not available for your system version."
+LOCAL42="Le logiciel VoIP pour les communications audio entre utilisateurs"
+LOCAL43="Lutris est une plateforme de jeux pour GNU/Linux"
+LOCAL44="GZDoom est un portage basé sur ZDoom qui est maintenu par Christoph Oelckers"
+LOCAL45="Il ne peut être installé sur votre version de Debian/Sparky."
+LOCAL46="Sortie..."
+LOCAL47="Enlèvement"
+LOCAL48="Réinstallation"
+LOCAL49="Installation"
+LOCAL50="Ce paquet est déjà installé."
+LOCAL51="Que voulez-vous faire à présent?"
+LOCAL52="Échec du test de la connexion internet!\n\nVous n'êtes probablement pas connecté à Internet ou bien le serveur du projet est hors-service.\n\nVérifiez et essayez à nouveau."
+LOCAL53="Dois-je installer le paquet que vous avez choisi?"
+LOCAL54="Le paquet a été installé avec succès."
+LOCAL55="Ce paquet n'est pas disponible pour votre version du système."
 ### .desktop file to be translated too
 # Name[fr_FR]=
 # Comment[fr_FR]=Installer des émulateurs de jeux en un clic
