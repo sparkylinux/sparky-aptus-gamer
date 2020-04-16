@@ -1,7 +1,7 @@
 # Файл русской локализации для Sparky APTus Gamer.
 # Copyright 2016 Igor Klyushnyov <inklu@yandex.ru> 2016/01/23
 # Под лицензией GNU GPL v2
-# Last update 2018/04/24 by pavroo
+# Last update 2020/04/16 by ChourS2008
 LOCAL1="Имя"
 LOCAL2="Описание"
 LOCAL3="Статус"
@@ -42,21 +42,21 @@ LOCAL37="POSIX-скрипт оболочки 'менеджер пакетов' �
 LOCAL38="Эмулятор Sega Saturn"
 LOCAL39="Эмулятор для Super Nintendo Entertainment System"
 LOCAL40="Для завершения установки Desura Client для Linux, \nперейдите в Menu-> Internet-> Desura Installer\n\nЗавершение..."
-LOCAL41="The best way to play itch.io games"
-LOCAL42="VoIP software for audio communication between users"
-LOCAL43="Lutris is a gaming platform for GNU/Linux"
-LOCAL44="GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers"
-LOCAL45="It can not be installed on your version of Debian/Sparky."
+LOCAL41="Лучший способ играть в игры itch.io"
+LOCAL42="VoIP программное обеспечение для аудиосвязи между пользователями"
+LOCAL43="Lutris - игровая платформа для GNU / Linux"
+LOCAL44="GZDoom - это порт на основе ZDoom, который обслуживается Кристофом Оелькерсом"
+LOCAL45="Это нельзя установить на вашу версию Debian/Sparky."
 LOCAL46="Завершение..."
-LOCAL47="Remove"
-LOCAL48="Reinstall"
-LOCAL49="Install"
-LOCAL50="This package is already installed."
-LOCAL51="What would you like to do now?"
-LOCAL52="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the main repository server is down.\n\nCheck it out and try again."
-LOCAL53="Should I install the package you have chosen?"
-LOCAL54="The package has been successfully installed."
-LOCAL55="This package is not available for your system version."
+LOCAL47="Удалить"
+LOCAL48="Переустановить"
+LOCAL49="Установить"
+LOCAL50="Этот пакет уже установлен."
+LOCAL51="Что бы вы хотели сделать сейчас?"
+LOCAL52="Тест подключения к интернету не пройден!\n\nВозможно, вы НЕ подключены к Интернету или основной сервер хранилища не работает.\n\nПроверьте это и попробуйте снова."
+LOCAL53="Установить пакет, который вы выбрали?"
+LOCAL54="Пакет был успешно установлен."
+LOCAL55="Этот пакет недоступен для вашей версии системы."
 ### .desktop file to be translated too
 # Name[ru_RU]=
 # Comment[ru_RU]=Установка эмуляторов игр одним щелчком
