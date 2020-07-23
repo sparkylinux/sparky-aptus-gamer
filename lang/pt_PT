@@ -1,7 +1,8 @@
 # Arquivo de localização para Portugues de Portugal do Sparky APTus Gamer.
-# Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Monday 01 February 22:12:30 WET 2016
+# Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Monday 01 2月22日:12:30 WET 2016
 # Sob a Licença GNU GPL v2
 # Last update 2018/04/24 by pavroo
+# Update 2020/07/23 by xingjiapeng
 LOCAL1="Nome"
 LOCAL2="Descrição"
 LOCAL3="Status"
@@ -16,10 +17,10 @@ LOCAL11="Interface para AdvanceMAME, AdvanceMENU, MAME, MESS, xmame, Raine e out
 LOCAL12="Emulator para sistemas de 8 bits de Atari, consola SuperSystem XE sistema de jogo e Atari 5200"
 LOCAL13="Emulador de Nintendo DS"
 LOCAL14="Plataforma de distribuição digital para sistemas Windows, Linux e OS X - instalação OnLine"
-LOCAL15="Emulador DOS para BeOS, Linux, Mac OS X, OS2 e Windows"
+LOCAL15="Emulador DOS para BeOS, Linux, macOS, OS2 e Windows"
 LOCAL16="Emulador DOS para Linux"
 LOCAL17="ePSXe (emulador melhorado para PSX) é (consola) emulador para um vídeo jogo da PlayStation"
-LOCAL18="Sistema de entretenimento Nintendo (NES),  emulador Famicom Famicom Disco de sistema e (FDS)"
+LOCAL18="Sistema de entretenimento Nintendo (NES), emulador Famicom Famicom Disco de sistema e (FDS)"
 LOCAL19="Emulador Multi-plataforma para Amiga"
 LOCAL20="Interface simples MAME"
 LOCAL21="Atari ST, STE, TT e emulador Falcon para Linux e outros sistemas"
@@ -32,7 +33,7 @@ LOCAL27="Emulador para sistema de entretenimento Nintendo/Famicom"
 LOCAL28="Emulador Sony PlayStation"
 LOCAL29="Emulador PCSX-Reloaded - Sony PlayStation"
 LOCAL30="Front-end para Wine"
-LOCAL31="Uma fonte do emulador de PSP aberto disponível para Windows, MacOS, Linux e Android"
+LOCAL31="Uma fonte do emulador de PSP aberto disponível para Windows, macOS, Linux e Android"
 LOCAL32="Iniciador para o serviço de distribuição de software Steam"
 LOCAL33="Atari 2600 emulador para SDL e o Sistema X Window"
 LOCAL34="Emulador Cheio de recursos do Game Boy Advance"
