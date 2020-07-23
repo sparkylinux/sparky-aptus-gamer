@@ -3,7 +3,7 @@
 # Sob a licença GNU GPL v2
 # Traduzido  por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 2015/12/20
 # Last update 2018/04/24 by pavroo
-# Update 2020/07/23 by pavroo
+# Update 2020/07/23 by xingjiapeng
 LOCAL1="Nome"
 LOCAL2="Descrição"
 LOCAL3="Status"
@@ -18,7 +18,7 @@ LOCAL11="Frontend para AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine e outr
 LOCAL12="Emulador para sistemas Atari de 8 bits, console XE Game System e console Atari 5200 SuperSystem"
 LOCAL13="Emulador de Nintendo DS"
 LOCAL14="Instalador OnLine de plataforma de distribuição digital para sistemas Windows, Linux e OS X"
-LOCAL15="Emulador do DOS para o BeOS, Linux, Mac OS X, OS2, e Windows"
+LOCAL15="Emulador do DOS para o BeOS, Linux, macOS, OS2, e Windows"
 LOCAL16="Emulador do DOS para o Linux"
 LOCAL17="ePSXe (Emulador PSX aprimorado) é um emulador console do videogame PlayStation"
 LOCAL18="Emulador Nintendo Entertainment System (NES), Famicom e Famicom Disk System (FDS)"
@@ -34,7 +34,7 @@ LOCAL27="Emulador para Nintendo Entertainment System/Famicom"
 LOCAL28="Emulador para Sony PlayStation"
 LOCAL29="Emulador PCSX-Reloaded para o Sony PlayStation"
 LOCAL30="Front-end para o Wine"
-LOCAL31="Um emulador de PSP de código aberto disponível para o Windows, MacOS, Linux e Android"
+LOCAL31="Um emulador de PSP de código aberto disponível para o Windows, macOS, Linux e Android"
 LOCAL32="Iniciador do serviço de distribuição de software do Steam"
 LOCAL33="Emulador Atari 2600 para SDL e o Sistema X Window"
 LOCAL34="Emulador completo para Game Boy Advance"
