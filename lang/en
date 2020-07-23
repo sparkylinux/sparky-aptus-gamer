@@ -1,7 +1,8 @@
 # English localization file for Sparky APTus Gamer.
 # Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Under the GNU GPL v2
-# Last update 2018/04/24 by pavroo
+# Update 2018/04/24 by pavroo
+# Last pdate 2020/07/23 by xingjiapeng
 LOCAL1="Name"
 LOCAL2="Description"
 LOCAL3="Status"
@@ -16,7 +17,7 @@ LOCAL11="Frontend for AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine and oth
 LOCAL12="Emulator for Atari 8-bit systems, XE Game System and Atari 5200 SuperSystem console"
 LOCAL13="Nintendo DS emulator"
 LOCAL14="Digital distribution platform for Windows, Linux and OS X systems - OnLine Installer"
-LOCAL15="DOS emulator for BeOS, Linux, Mac OS X, OS2, and Windows"
+LOCAL15="DOS emulator for BeOS, Linux, macOS, OS2, and Windows"
 LOCAL16="DOS Emulator for Linux"
 LOCAL17="ePSXe (enhanced PSX emulator) is a PlayStation video game console emulator"
 LOCAL18="Nintendo Entertainment System (NES), Famicom and Famicom Disk System (FDS) emulator"
@@ -32,7 +33,7 @@ LOCAL27="Nintendo Entertainment System/Famicom emulator"
 LOCAL28="Sony PlayStation emulator"
 LOCAL29="PCSX-Reloaded - Sony PlayStation emulator"
 LOCAL30="Front-end for Wine"
-LOCAL31="An open source PSP emulator available for Windows, MacOS, Linux and Android"
+LOCAL31="An open source PSP emulator available for Windows, macOS, Linux and Android"
 LOCAL32="Launcher for the Steam software distribution service"
 LOCAL33="Atari 2600 Emulator for SDL and the X Window System"
 LOCAL34="Full featured Game Boy Advance emulator"
