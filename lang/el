@@ -1,7 +1,8 @@
 # Greek localization file for Sparky APTus Gamer.
 # Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Under the GNU GPL v2
-# Last update 2019/11/05 by jidan
+# Update 2019/11/05 by jidan
+# Update 2020/07/23 by xingjiapeng (fix mac)
 LOCAL1="Όνομα"
 LOCAL2="Περιγραφή"
 LOCAL3="Κατάσταση"
