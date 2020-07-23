@@ -2,7 +2,8 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/25
 # Under the GNU GPL v2
 # Translated to German by Pete B. 2015/10/29
-# Last update 2018/04/24 by pavroo
+# Update 2018/04/24 by pavroo
+# Last update 2020/07/23 by xingjiapeng (fix mac)
 LOCAL1="Name"
 LOCAL2="Beschreibung"
 LOCAL3="Status"
@@ -17,7 +18,7 @@ LOCAL11="GUI für AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine und andere 
 LOCAL12="Emulator für Atari 8-bit Systeme, XE Game System and Atari 5200 SuperSystem Konsole"
 LOCAL13="Nintendo DS Emulator"
 LOCAL14="Digitale distribution Plattform für Windows, Linux and OS X Systeme - OnLine Installer"
-LOCAL15="DOS Emulator für BeOS, Linux, Mac OS X, OS2, und Windows"
+LOCAL15="DOS Emulator für BeOS, Linux, macOS, OS2, und Windows"
 LOCAL16="DOS Emulator für Linux"
 LOCAL17="ePSXe (enhanced PSX Emulator) ist ein PlayStation Konsolen Emulator"
 LOCAL18="Nintendo Entertainment System (NES), Famicom und Famicom Disk System (FDS) Emulator"
@@ -33,7 +34,7 @@ LOCAL27="Nintendo Entertainment System/Famicom Emulator"
 LOCAL28="Sony PlayStation Emulator"
 LOCAL29="PCSX-Reloaded - Sony PlayStation Emulator"
 LOCAL30="GUI für Wine"
-LOCAL31="Ein Open-Source PSP Emulator, erhältlich für Windows, MacOS, Linux und Android"
+LOCAL31="Ein Open-Source PSP Emulator, erhältlich für Windows, macOS, Linux und Android"
 LOCAL32="Programmstarter für den Steam Software Distribution Service"
 LOCAL33="Atari 2600 Emulator für SDL und das X Window System"
 LOCAL34="Umfangreicher Game Boy Advance Emulator"
