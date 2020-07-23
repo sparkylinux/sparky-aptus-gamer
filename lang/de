@@ -3,7 +3,7 @@
 # Under the GNU GPL v2
 # Translated to German by Pete B. 2015/10/29
 # Update 2018/04/24 by pavroo
-# Last update 2020/07/23 by xingjiapeng (fix mac)
+# Last update 2020/07/23 by xingjiapeng
 LOCAL1="Name"
 LOCAL2="Beschreibung"
 LOCAL3="Status"
