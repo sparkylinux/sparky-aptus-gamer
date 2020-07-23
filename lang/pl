@@ -3,6 +3,7 @@
 # Under the GNU GPL v2
 # Translated to Polish by pavroo
 # Last update 2018/04/24 by pavroo
+# Update 2020/07/23 by xingjiapeng
 LOCAL1="Nazwa"
 LOCAL2="Opis"
 LOCAL3="Status"
@@ -17,7 +18,7 @@ LOCAL11="Interfejs dla AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine i inny
 LOCAL12="Emulator konsoli Atari 8-bit systems, XE Game System i Atari 5200 SuperSystem"
 LOCAL13="Emulator Nintendo DS"
 LOCAL14="Platforma Desura dla Windows, Linux i OS X - instalator sieciowy dla Linux"
-LOCAL15="Emulator DOS dla BeOS, Linux, Mac OS X, OS2 i Windows"
+LOCAL15="Emulator DOS dla BeOS, Linux, macOS, OS2 i Windows"
 LOCAL16="Emulator DOS dla Linux"
 LOCAL17="ePSXe (unowocześniony emulator PSX) jest emulatorem konsoli gier wideo PlayStation"
 LOCAL18="Emulator Nintendo Entertainment System (NES), Famicom i Famicom Disk System (FDS)"
@@ -33,7 +34,7 @@ LOCAL27="Emulator Nintendo Entertainment System/Famicom"
 LOCAL28="Emulator Sony PlayStation"
 LOCAL29="PCSX-Reloaded - emulator Sony PlayStation"
 LOCAL30="Interfejs graficzny dla Wine"
-LOCAL31="Otwarto-źródłowy emulator PSP dostępny dla Windows, MacOS, Linux i Android"
+LOCAL31="Otwarto-źródłowy emulator PSP dostępny dla Windows, macOS, Linux i Android"
 LOCAL32="Instalator platformy Steam dla Linux"
 LOCAL33="Emulator Atari 2600 dla SDL oraz X Window System"
 LOCAL34="W pełni funkcjonalny emulator Game Boy Advance"
