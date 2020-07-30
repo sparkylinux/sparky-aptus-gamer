@@ -44,15 +44,19 @@ File: pt_BR
     Copyright (C) 2018 Elton Fabricio Ferreira
     License: GPL-2
 
+File: pt_PT
+    Copyright (C) 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com>
+    License: GPL-2
+
 File: ru
     Copyright (C) 2016 Igor Klyushnyov <inklu@yandex.ru>
     Copyright (C) 2020 ChourS2008
     License: GPL-2
 
-File: pt_PT
-    Copyright (C) 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com>
+File: zh_CN
+    Copyright (C) 2020 xingjiapeng
     License: GPL-2
-
+   
 License:
 
     This package is free software; you can redistribute it and/or modify
