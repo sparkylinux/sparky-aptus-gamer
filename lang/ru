@@ -2,6 +2,7 @@
 # Copyright 2016 Igor Klyushnyov <inklu@yandex.ru> 2016/01/23
 # Под лицензией GNU GPL v2
 # Last update 2020/04/16 by ChourS2008
+# Update 2020/07/23 by xingjiapeng
 LOCAL1="Имя"
 LOCAL2="Описание"
 LOCAL3="Статус"
@@ -16,7 +17,7 @@ LOCAL11="Внешний интерфейс для AdvanceMAME, AdvanceMESS, MAME
 LOCAL12="Эмулятор для 8-битных систем Atari, XE Game System и консоли Atari 5200 SuperSystem"
 LOCAL13="Эмулятор Nintendo DS"
 LOCAL14="Платформа цифрового распространения для Windows, Linux и систем OS X - онлайн установщик"
-LOCAL15="Эмулятор DOS для BeOS, Linux, Mac OS X, OS2, и Windows"
+LOCAL15="Эмулятор DOS для BeOS, Linux, macOS, OS2, и Windows"
 LOCAL16="Эмулятор DOS для Linux"
 LOCAL17="ePSXe (улучшенный эмулятор PSX) - это консольный эмулятор видеоигр PlayStation"
 LOCAL18="Nintendo Entertainment System (NES), эмулятор Famicom и Famicom Disk System (FDS)"
@@ -32,7 +33,7 @@ LOCAL27="Эмулятор Nintendo Entertainment System/Famicom"
 LOCAL28="Эмулятор Sony PlayStation"
 LOCAL29="Эмулятор PCSX-Reloaded - Sony PlayStation"
 LOCAL30="Внешний интерфейс для Wine"
-LOCAL31="Эмулятор PSP с открытым кодом, доступный для Windows, MacOS, Linux и Android"
+LOCAL31="Эмулятор PSP с открытым кодом, доступный для Windows, macOS, Linux и Android"
 LOCAL32="Программа запуска для службы распространения программного обеспечения Steam"
 LOCAL33="Эмулятор Atari 2600 для SDL и X Window System"
 LOCAL34="Полнофункциональный эмулятор Game Boy Advance"

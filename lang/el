@@ -1,7 +1,8 @@
 # Greek localization file for Sparky APTus Gamer.
 # Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Under the GNU GPL v2
-# Last update 2019/11/05 by jidan
+# Update 2019/11/05 by jidan
+# Update 2020/07/23 by xingjiapeng
 LOCAL1="Όνομα"
 LOCAL2="Περιγραφή"
 LOCAL3="Κατάσταση"
@@ -16,7 +17,7 @@ LOCAL11="Διεπαφή για το AdvanceMAME, AdvanceMESS, MAME, MESS, xmame,
 LOCAL12="Εξομοιωτής για σύστημα Atari 8-bit, XE Game και κονσόλα Atari 5200 SuperSystem"
 LOCAL13="Εξομοιωτής Nintendo DS"
 LOCAL14="Ψηφιακή πλατφόρμα διανομής για συστήματα Windows, Linux και OS X - OnLine εγκατάσταση"
-LOCAL15="Εξομοιωτής DOS για BeOS, Linux, Mac OS X, OS2, και Windows"
+LOCAL15="Εξομοιωτής DOS για BeOS, Linux, macOS, OS2, και Windows"
 LOCAL16="Εξομοιωτής DOS για Linux"
 LOCAL17="Το ePSXe (enhanced PSX emulator) είναι ένας εξομοιωτής για την κονσόλα παιχνιδιών PlayStation"
 LOCAL18="Nintendo Entertainment System (NES), εξομοιωτής Famicom και Famicom Disk System (FDS)"
@@ -32,7 +33,7 @@ LOCAL27="Εξομοιωτής  συστημάτων Nintendo Entertainment/Famic
 LOCAL28="Εξομοιωτής Sony PlayStation"
 LOCAL29="PCSX-Reloaded - Εξομοιωτής Sony PlayStation"
 LOCAL30="Διεπαφή για το Wine"
-LOCAL31="Ένας Εξομοιωτής PSP διαθέσιμος Windows, MacOS, Linux and Android"
+LOCAL31="Ένας Εξομοιωτής PSP διαθέσιμος Windows, macOS, Linux and Android"
 LOCAL32="Εκκινητής της υπηρεσίας διανομής λογισμικού Steam"
 LOCAL33="Εξομοιωτής Atari 2600 για SDL και συστήματα X Window"
 LOCAL34="Εξομοιωτής Game Boy Advance πλήρης επιλογών"

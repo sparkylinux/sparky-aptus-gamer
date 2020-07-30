@@ -1,8 +1,9 @@
 # Indonesian localization file for Sparky APTus Gamer.
 # Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Under the GNU GPL v2
-# Last update 2018/07/22 by pavroo
+# Update 2018/07/22 by pavroo
 # Translated to Indonesian by les kompie
+# Last update 2020/07/23 by xingjiapeng
 LOCAL1="Nama"
 LOCAL2="Deskripsi"
 LOCAL3="Status"
@@ -17,7 +18,7 @@ LOCAL11="Frontend untuk AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine dan e
 LOCAL12="Emulator untuk sistem Atari 8-bit, XE Game System dan konsol Atari 5200 SuperSystem"
 LOCAL13="Emulator Nintendo DS"
 LOCAL14="Platform distribusi digital untuk sistem Windows, Linux, dan OS X - Penginstal OnLine"
-LOCAL15="Emulator DOS untuk BeOS, Linux, Mac OS X, OS2, dan Windows"
+LOCAL15="Emulator DOS untuk BeOS, Linux, macOS, OS2, dan Windows"
 LOCAL16="Emulator DOS untuk Linux"
 LOCAL17="ePSXe (enhanced PSX emulator) adalah emulator konsol video game PlayStation"
 LOCAL18="Emulator Nintendo Entertainment System (NES), Famicom dan Famicom Disk System (FDS)"
@@ -33,7 +34,7 @@ LOCAL27="Emulator Nintendo Entertainment System / Famicom"
 LOCAL28="Emulator Sony PlayStation"
 LOCAL29="PCSX-Reloaded - emulator Sony PlayStation"
 LOCAL30="Front-end untuk Wine"
-LOCAL31="Emulator PSP open source untuk Windows, MacOS, Linux, dan Android"
+LOCAL31="Emulator PSP open source untuk Windows, macOS, Linux, dan Android"
 LOCAL32="Peluncur untuk layanan distribusi software Steam"
 LOCAL33="Emulator Atari 2600 untuk sistem SDL dan X Window"
 LOCAL34="Emulator Game Boy Advance dengan fitur lengkap"

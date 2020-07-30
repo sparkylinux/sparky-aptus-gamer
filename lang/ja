@@ -1,9 +1,10 @@
 # Japanese localization file for Sparky APTus Gamer.
 # Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Under the GNU GPL v2
-# Last update 2018/04/24 by pavroo
+# Update 2018/04/24 by pavroo
 # Translated to Japanese by BALLOON a.k.a. Fu-sen.
 # Translated to Japanese by FuRuYa7.
+# Last update 2020/07/23 by xingjiapeng
 LOCAL1="名前"
 LOCAL2="説明"
 LOCAL3="状況"
@@ -18,7 +19,7 @@ LOCAL11="AdvanceMAME・AdvanceMESS・MAME・MESS・xmame・Raine・その他エ�
 LOCAL12="Atari 8-bit システム, XE ゲームシステム, Atari 5200 SuperSystem コンソールエミュレータ"
 LOCAL13="Nintendo DS エミュレーター"
 LOCAL14="Windows用のデジタル配信プラットフォーム, Linux と OS X システム - オンラインインストーラ"
-LOCAL15="BeOS・Linux・Mac OS X・OS2・Windows の DOS エミュレータ"
+LOCAL15="BeOS・Linux・macOS・OS2・Windows の DOS エミュレータ"
 LOCAL16="Linux の DOS エミュレータ"
 LOCAL17="ePSXe (enhanced PSX エミュレータ) PlayStation ビデオゲームコンソールエミュレータ"
 LOCAL18="ニンテンドーエンターテイメントシステム(NES), ファミコン・ディスクシステム (FDS) エミュレータ"
@@ -34,7 +35,7 @@ LOCAL27="ニンテンドー エンターテイメントシステム・ファミ�
 LOCAL28="Sony PlayStation エミュレータ"
 LOCAL29="PCSX-Reloaded - SONY PlayStation エミュレータ"
 LOCAL30="Wine フロントエンド"
-LOCAL31="Windows・MacOS・Linux・Android 向けオープンソース PSP エミュレータ"
+LOCAL31="Windows・macOS・Linux・Android 向けオープンソース PSP エミュレータ"
 LOCAL32="Steam ソフトウェアディストリビューションサービスランチャー"
 LOCAL33="SDL・X ウインドウシステム Atari 2600 エミュレータ"
 LOCAL34="Game Boy Advance エミュレータ"

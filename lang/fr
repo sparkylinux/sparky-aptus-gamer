@@ -1,7 +1,7 @@
 ﻿# Fichier de localisation française de Sparky APTus Gamer.
 # Copyright 2016 hiver <hiver@club-internet.fr> 2016/06/05
 # Sous licence GNU GPL v2
-# Dernière mise à jour 2018/09/25
+# Dernière mise à jour 2020/07/23
 LOCAL1="Nom"
 LOCAL2="Description"
 LOCAL3="État"
@@ -16,7 +16,7 @@ LOCAL11="Interface pour AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine et au
 LOCAL12="Émulateur pour Atari 8-bit systems, XE Game System et la console Atari 5200 SuperSystem"
 LOCAL13="Émulateur pour Nintendo DS"
 LOCAL14="Plateforme de distribution numérique pour  Windows, Linux et systèmes OS X  - installateur en ligne"
-LOCAL15="Émulateur DOS pour BeOS, Linux, Mac OS X, OS2, et Windows"
+LOCAL15="Émulateur DOS pour BeOS, Linux, macOS, OS2, et Windows"
 LOCAL16="Émulateur DOS pour Linux"
 LOCAL17="ePSXe (émulateur  PSX amélioré ) est un émulateur de console de jeux vidéos PlayStation"
 LOCAL18="Émulateur pour Nintendo Entertainment System (NES), Famicom et Famicom Disk System (FDS) "
@@ -32,7 +32,7 @@ LOCAL27="Émulateur pour Nintendo Entertainment System/Famicom"
 LOCAL28="Émulateur pour Sony PlayStation"
 LOCAL29="Émulateur pour PCSX-Reloaded - Sony PlayStation"
 LOCAL30="Interface pour Wine"
-LOCAL31="Émulateur au code source libre de PSP disponible pour Windows, MacOS, Linux et Android"
+LOCAL31="Émulateur au code source libre de PSP disponible pour Windows, macOS, Linux et Android"
 LOCAL32="Lanceur pour le service de distribution logiciel STEAM"
 LOCAL33="Émulateur d'Atari 2600 pour SDL et le système X Window"
 LOCAL34="Émulateur complet pour Game Boy Advance"

@@ -1,7 +1,8 @@
 # Hungarian localization file for Sparky APTus Gamer. (Translated by Nemomen).
 # Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
 # Under the GNU GPL v2
-# Last update 2018/04/24 by pavroo
+# Update 2018/04/24 by pavroo
+# Last update 2020/07/23 by xingjiapeng
 LOCAL1="Név"
 LOCAL2="Leírás"
 LOCAL3="Állapot (státusz)"
@@ -16,7 +17,7 @@ LOCAL11="Programfelület (Frontend) az AdvanceMAME, AdvanceMESS, MAME, MESS, xma
 LOCAL12="Emulátor Atari 8-bit systems, XE Game System and Atari 5200 SuperSystem konzol részére"
 LOCAL13="Nintendo DS emulátor"
 LOCAL14="Digitális felosztási környezet Windows, Linux and OS X systems - OnLine Installer részére"
-LOCAL15="DOS emulátor BeOS, Linux, Mac OS X, OS2, ésa Windows részére"
+LOCAL15="DOS emulátor BeOS, Linux, macOS, OS2, ésa Windows részére"
 LOCAL16="DOS Emulátor Linuxhoz"
 LOCAL17="Az ePSXe kiterjesztett PSX emulátor (enhanced PSX emulator) a PlayStation videojáték konzol emulátor (video game console emulator)"
 LOCAL18="Nintendo Entertainment System (NES), Famicom and Famicom Disk System (FDS) emulátor"
@@ -32,7 +33,7 @@ LOCAL27="Nintendo Entertainment System/Famicom emulátor"
 LOCAL28="Sony PlayStation emulátor"
 LOCAL29="PCSX-Reloaded (újratöltött) - Sony PlayStation emulátor"
 LOCAL30="Programfelület Wine részére"
-LOCAL31="Nyílt forráskódú PSP emulátor elérhető Windows, MacOS, Linux és Android számára"
+LOCAL31="Nyílt forráskódú PSP emulátor elérhető Windows, macOS, Linux és Android számára"
 LOCAL32="Indító/kilövő a Steam (szoftver elosztó szolgáltatás (software distribution service) részére"
 LOCAL33="Atari 2600 Emulator SDL és az X Window Rendszer (System) részére"
 LOCAL34="Full featured (teljesen felszerelt) Game Boy Advance emulátor"
