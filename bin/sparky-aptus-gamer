@@ -4,7 +4,7 @@
 # It lets you install game emulators from Debian and Sparky repository
 # Created by Paweł "pavroo" Pijanowski 2014/11/16
 # Copyright 2014-2020 under the GNU GPL2 License
-# Last updated 2020/07/30
+# Last updated 2020/09/16
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-gamer"
@@ -85,10 +85,6 @@ case $1 in
      ;;
   atari800)
 	PACKAGE="atari800"
-	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
-     ;;
-  desmume)
-	PACKAGE="desmume"
 	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
      ;;
   dosbox)
