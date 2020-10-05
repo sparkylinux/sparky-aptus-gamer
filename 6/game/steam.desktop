@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Steam
+Comment=Launcher for the Steam software distribution service
+Comment[de]=Programmstarter für den Steam Software Distribution Service
+Comment[es]=Lanzador para el servicio de distribución de software Steam
+Comment[fr]=Lanceur pour le service de distribution logiciel STEAM
+Comment[it]=Avviatore per il sistema di distribuzione software Steam
+Comment[ja]=Steam ソフトウェアディストリビューションサービスランチャー
+Comment[pl]=Instalator platformy Steam dla Linux
+Comment[pt_BR]=Lançador para o serviço de distribuição do software Steam
+Comment[pt_PT]=Iniciador para o serviço de distribuição de software Steam
+Comment[ru]=Программа запуска для службы распространения программного обеспечения Steam
+Exec=remsu /usr/bin/sparky-aptus-gamer steam
+Icon=steam
+Type=Application
+Categories=Applications;Game

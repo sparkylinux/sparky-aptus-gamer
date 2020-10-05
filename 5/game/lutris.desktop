@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Lutris
+Comment=Lutris is a gaming platform for GNU/Linux
+Comment[it]=Lutris e' una piattaforma gaming per GNU/Linux
+Comment[pl]=Lutris to platforma gier dla GNU/Linux
+Exec=remsu /usr/bin/sparky-aptus-gamer lutris
+Icon=lutris
+Type=Application
+Categories=Applications;Game

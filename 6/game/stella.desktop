@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Stella
+Comment=Atari 2600 Emulator for SDL and the X Window System
+Comment[de]=Atari 2600 Emulator für SDL und das X Window System
+Comment[es]=Emulador Atari 2600 para SDL y el sistema X Window
+Comment[fr]=Émulateur d'Atari 2600 pour SDL et le système X Window
+Comment[it]=Emulatore per Atari 2600 per SDL e per server X
+Comment[ja]=SDL・X ウインドウシステム Atari 2600 エミュレーター
+Comment[pl]=Emulator Atari 2600 dla SDL oraz X Window System
+Comment[pt_BR]=Emulador para o Atari 2600 para o SDL e o Sistema X Window
+Comment[pt_PT]=Atari 2600 emulador para SDL e o Sistema X Window
+Comment[ru]=Эмулятор Atari 2600 для SDL и X Window System
+Exec=remsu /usr/bin/sparky-aptus-gamer stella
+Icon=stella
+Type=Application
+Categories=Applications;Game

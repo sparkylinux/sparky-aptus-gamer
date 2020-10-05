@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=PlayOnLinux
+Comment=Front-end for Wine
+Comment[de]=GUI für Wine
+Comment[es]=Interfaz para Wine
+Comment[fr]=Interface pour Wine
+Comment[it]=Front-end per Wine
+Comment[ja]=Wine フロントエンド
+Comment[pl]=Interfejs graficzny dla Wine
+Comment[pt_BR]=Front-end para o Wine
+Comment[pt_PT]=Front-end para Wine
+Comment[ru]=Внешний интерфейс для Wine
+Exec=remsu /usr/bin/sparky-aptus-gamer playonlinux
+Icon=playonlinux
+Type=Application
+Categories=Applications;Game

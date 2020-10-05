@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=GZDoom
+Comment=GZDoom is a ZDoom-based port which is maintained by Christoph Oelckers
+Comment[it]=GZDoom e' un porting basata su ZDoom cheè mantenuto da Christoph Oelckers
+Comment[pl]=GZDoom to otwarto-źródłowy port ZDoom rozwijany przez Christophera Oelckersa
+Exec=remsu /usr/bin/sparky-aptus-gamer gzdoom
+Icon=gzdoom
+Type=Application
+Categories=Applications;Game

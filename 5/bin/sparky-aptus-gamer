@@ -1,0 +1,264 @@
+#!/bin/bash
+
+# Sparky APTus Gamer (5) is a simply GUI frontend for APT-GET
+# It lets you install game emulators from Debian and Sparky repository
+# Created by Paweł "pavroo" Pijanowski 2014/11/16
+# Copyright 2014-2020 under the GNU GPL2 License
+# Last updated 2020/10/05
+
+# get default's locale file
+DEFLOCDIR="/usr/share/sparky/sparky-aptus-gamer"
+if [ "`cat /etc/default/locale | grep LANG= | grep de`" != "" ]; then
+. $DEFLOCDIR/de
+elif [ "`cat /etc/default/locale | grep LANG= | grep el`" != "" ]; then
+. $DEFLOCDIR/el
+elif [ "`cat /etc/default/locale | grep LANG= | grep es`" != "" ]; then
+. $DEFLOCDIR/es
+elif [ "`cat /etc/default/locale | grep LANG= | grep fr`" != "" ]; then
+. $DEFLOCDIR/fr
+elif [ "`cat /etc/default/locale | grep LANG= | grep hu`" != "" ]; then
+. $DEFLOCDIR/hu
+elif [ "`cat /etc/default/locale | grep LANG= | grep id_ID`" != "" ]; then
+. $DEFLOCDIR/id_ID
+elif [ "`cat /etc/default/locale | grep LANG= | grep it`" != "" ]; then
+. $DEFLOCDIR/it
+elif [ "`cat /etc/default/locale | grep LANG= | grep ja`" != "" ]; then
+. $DEFLOCDIR/ja
+elif [ "`cat /etc/default/locale | grep LANG= | grep pl`" != "" ]; then
+. $DEFLOCDIR/pl
+elif [ "`cat /etc/default/locale | grep LANG= | grep pt_BR`" != "" ]; then
+. $DEFLOCDIR/pt_BR
+elif [ "`cat /etc/default/locale | grep LANG= | grep pt_PT`" != "" ]; then
+. $DEFLOCDIR/pt_PT
+elif [ "`cat /etc/default/locale | grep LANG= | grep ru`" != "" ]; then
+. $DEFLOCDIR/ru
+elif [ "`cat /etc/default/locale | grep LANG= | grep zh_CN`" != "" ]; then
+. $DEFLOCDIR/zh_CN
+else
+. $DEFLOCDIR/en
+fi
+
+testroot="`whoami`"
+if [ "$testroot" != "root" ]; then
+	echo "Must be root... Exiting now..."
+	exit 1
+fi
+
+MENU1="yad --window-icon=applications-games --width=980 --height=450 --center"
+DIALOG="yad --window-icon=applications-games --width=450 --height=200 --center"
+TITLE="--always-print-result --dialog-sep --image=applications-games --title="
+TEXT="--text="
+MENU="--list --column=$LOCAL1 --column=$LOCAL2 --column=$LOCAL3"
+OKEXIT=" --button=Ok:0 --button=$LOCAL4:1 "
+MSGBOX=" --button=Ok:0 "
+BUTTONREMOVE="--button=$LOCAL47:3"
+BUTTONREINSTALL="--button=$LOCAL48:4"
+BUTTONINSTALL="--button=$LOCAL49:0"
+BUTTONEXIT="--button=$LOCAL4:1"
+TITLETEXT="APTus Gamer"
+TEXTBREAK="$LOCAL5"
+TEXTDONE="$LOCAL6"
+TEXTSTOP="$LOCAL8"
+if [ -f /usr/bin/sparky-xterm ];then
+	SPARKYXTERM="/usr/bin/sparky-xterm"
+else
+	echo "sparky-xterm is missing... Exiting..."
+	exit 1
+fi
+INSTALL="apt-get install"
+REINSTALL="apt-get install --reinstall"
+UNINSTALL="apt-get purge"
+ARCH64="`uname -m | grep x86_64`"
+ARCH32="`uname -m | grep 686`"
+ARCHARM="`uname -m | grep arm`"
+PINGTEST=$(ping -c 1 debian.org | grep [0-9])
+
+# recive package name
+case $1 in
+  antimicro)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL55\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="antimicro"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  atari800)
+	PACKAGE="atari800"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  dosbox)
+	PACKAGE="dosbox"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  epsxe)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL55\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="epsxe"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  fceux)
+	PACKAGE="fceux"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  fs-uae-arcade)
+	PACKAGE="fs-uae-arcade"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  gnome-video-arcade)
+	PACKAGE="gnome-video-arcade"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  gzdoom)
+	PACKAGE="gzdoom"
+	CHECKPACKAGE="/usr/games/$PACKAGE"
+     ;;
+  hatari)
+	PACKAGE="hatari"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  higan)
+	PACKAGE="higan"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  itch)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL55\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="itch"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  joystick)
+	PACKAGE="joystick"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  jstest-gtk)
+	PACKAGE="jstest-gtk"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  kega-fusion)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL55\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="kega-fusion"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  lutris)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL55\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="lutris"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  mame)
+	PACKAGE="mame"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  mednafen)
+	PACKAGE="mednafen"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  nestopia)
+	PACKAGE="nestopia"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  pcsx2)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL55\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="pcsx2"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  pcsxr)
+	PACKAGE="pcsxr"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  playonlinux)
+	PACKAGE="playonlinux"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  ppsspp)
+	PACKAGE="ppsspp"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  steam)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL55\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="steam"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  stella)
+	PACKAGE="stella"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  visualboyadvance)
+	PACKAGE="visualboyadvance"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  virtualjaguar)
+	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL55\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="virtualjaguar"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  wine)
+	PACKAGE="wine"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  winetricks)
+	PACKAGE="winetricks"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+  yabause)
+	PACKAGE="yabause-gtk"
+	CHECKPACKAGE="/usr/share/doc/$PACKAGE"
+     ;;
+esac
+
+# install, reinstall or remove a package
+if [ -d "$CHECKPACKAGE" ]; then
+	$DIALOG $TEXT"\n$LOCAL50\n$LOCAL51" $TITLE"$TITLETEXT" $BUTTONREMOVE $BUTTONREINSTALL $BUTTONEXIT
+	ret=$?
+	if [[ $ret -eq 3 ]]; then
+		$SPARKYXTERM "$UNINSTALL $PACKAGE"
+	elif [[ $ret -eq 4 ]]; then
+		if [ "$PINGTEST" = "" ]; then
+			$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL52 \n\n$LOCAL46"
+			exit 1
+		fi
+		$SPARKYXTERM "$REINSTALL $PACKAGE"
+	else
+		exit 1
+	fi
+elif [ ! -d "$CHECKPACKAGE" ]; then
+	$DIALOG $TEXT"\n$LOCAL53" $TITLE"$TITLETEXT" $BUTTONINSTALL $BUTTONEXIT
+	if [ "$?" = "0" ]; then
+		if [ "$PINGTEST" = "" ]; then
+			$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL52 \n\n$LOCAL46"
+			exit 1
+		fi
+		$SPARKYXTERM "$INSTALL $PACKAGE"
+		if [ ! -d "$CHECKPACKAGE" ]; then
+			$DIALOG $TEXT"\n$LOCAL5" $TITLE"$TITLETEXT" $MSGBOX
+			exit 1
+		else
+			$DIALOG $TEXT"\n$LOCAL54\n\n$LOCAL46" $TITLE"$TITLETEXT" $MSGBOX
+			exit 1
+		fi
+
+	elif [ "$?" != "0" ]; then
+		exit 1
+	fi
+fi
+
+exit 0

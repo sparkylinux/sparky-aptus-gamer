@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Kega Fusion
+Comment=Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD emulator
+Comment[es]=Emulador de Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD
+Comment[fr]=Émulateur pour Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD
+Comment[it]=Emulatore per Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, e SegaCD/MegaCD
+Comment[ja]=Sega SG/SC/SF・Master System・Game Gear・Genesis/Megadrive・SVP・Pico・SegaCD/MegaCD エミュレーター
+Comment[pl]=Emulator Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico i MegaCD
+Comment[pt_BR]=Emulador para o Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD
+Comment[pt_PT]=Emulador para Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD
+Comment[ru]=Эмулятор Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD
+Exec=remsu /usr/bin/sparky-aptus-gamer kega-fusion
+Icon=kega-fusion
+Type=Application
+Categories=Applications;Game

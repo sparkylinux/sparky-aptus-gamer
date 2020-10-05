@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=AntiMicro
+Comment=Use a gamepad to control a variety of programs
+Comment[de]=Nutze das Gamepad um Programme/Spiele zu steuern
+Comment[es]=Usa un gamepad para controlar una variedad de programas
+Comment[fr]=Utilisez une manette de jeu pour commander un logiciel
+Comment[it]=Usa un gamepad per controllare una varietà di programmi
+Comment[pl]=Użyj gamepada do kontrolowania różnych programów
+Comment[pt]=Use um gamepad para controlar uma variedade de programas
+Comment[ru]=Используйте геймпад для управления различными программами
+Comment[sr]=Користите џојстик или играћу тастатуру за управљање различитим програмима
+Comment[uk]=Використовуйте ігровий маніпулятор для керування програмами
+Exec=remsu /usr/bin/sparky-aptus-gamer antimicro
+Icon=antimicro
+Type=Application
+Categories=Applications;Game

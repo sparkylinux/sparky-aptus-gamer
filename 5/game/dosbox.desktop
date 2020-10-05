@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=DOSBox Emulator
+Comment=Run old DOS applications
+Comment[ca]=Executeu antigues aplicacions DOS
+Comment[de]=Ein Emulator für alte DOS Programme
+Comment[es]=Un emulador para ejecutar antiguas aplicaciones DOS
+Comment[nl]=Een simulator om oude DOS-spellen te spelen
+Commnet[pl]=Uruchom stare aplikacja dla DOS
+Comment[ru]=Запуск старых DOS-приложений
+Comment[it]=Un emulatore per far girare vecchi giochi DOS
+Comment[ua]=Запуск старих DOS-застосувань
+Exec=remsu /usr/bin/sparky-aptus-gamer dosbox
+Icon=dosbox
+Type=Application
+Categories=Applications;Game

@@ -1,0 +1,63 @@
+# Hungarian localization file for Sparky APTus Gamer. (Translated by Nemomen).
+# Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/23
+# Under the GNU GPL v2
+# Update 2018/04/24 by pavroo
+# Last update 2020/07/23 by xingjiapeng
+LOCAL1="Név"
+LOCAL2="Leírás"
+LOCAL3="Állapot (státusz)"
+LOCAL4="Kilépés"
+LOCAL5="Valami hibás! \nTalán leállította a telepítést vagy a fő tárolószerver nem érhető el. \nEllenkező esetben ellenőrizze Internet kapcsolatát, frissítse a csomaglistát és próbálja újra." \n\nKilépés...
+LOCAL6="Az alkalmazás sikeresen telepítve! \n\nVissza a főmenübe..."
+#LOCAL7=""
+LOCAL8="Az alkalmazás már telepítve! \n\nKilépés..."
+LOCAL9="Telepítve"
+LOCAL10="Ez lehetővé teszi Önnek játékemulátorok és egyéb játékalkalmazások gyors telepítését az adattárolóból (repo).\n\nKérjük, válassza ki a telepítendő alkalmazást!
+LOCAL11="Programfelület (Frontend) az AdvanceMAME, AdvanceMESS, MAME, MESS, xmame, Raine és egyéb emulátorokhoz"
+LOCAL12="Emulátor Atari 8-bit systems, XE Game System and Atari 5200 SuperSystem konzol részére"
+LOCAL13="Nintendo DS emulátor"
+LOCAL14="Digitális felosztási környezet Windows, Linux and OS X systems - OnLine Installer részére"
+LOCAL15="DOS emulátor BeOS, Linux, macOS, OS2, ésa Windows részére"
+LOCAL16="DOS Emulátor Linuxhoz"
+LOCAL17="Az ePSXe kiterjesztett PSX emulátor (enhanced PSX emulator) a PlayStation videojáték konzol emulátor (video game console emulator)"
+LOCAL18="Nintendo Entertainment System (NES), Famicom and Famicom Disk System (FDS) emulátor"
+LOCAL19="Platformfüggetlen (Cross-platform) Amiga emulátor"
+LOCAL20="Egyszerű MAME programfelület (frontend)"
+LOCAL21="Atari ST, STE, TT és Falcon emulator Linuxra és egyéb rendszerekre"
+LOCAL22="Emulator Nintendos SNES, NES, Gameboy, Gameboy Color és Gameboy Advance részére"
+LOCAL23="Sega SG/SC/SF, Master System, Game Gear, Genesis/Megadrive, SVP, Pico, SegaCD/MegaCD emulator"
+LOCAL24="Hardver emulátor, amelyik pontosan visszaadja több „árkádgépnek” (arcade machines) a viselkedését
+LOCAL25="Atari Lynx, GameBoy, NES, SNES, PC-FX, Sega, Sony PlayStation és egyéb rendszerek emulatora"
+LOCAL26="Emulator különféle konzolok és számítógépes rendszerek részére"
+LOCAL27="Nintendo Entertainment System/Famicom emulátor"
+LOCAL28="Sony PlayStation emulátor"
+LOCAL29="PCSX-Reloaded (újratöltött) - Sony PlayStation emulátor"
+LOCAL30="Programfelület Wine részére"
+LOCAL31="Nyílt forráskódú PSP emulátor elérhető Windows, macOS, Linux és Android számára"
+LOCAL32="Indító/kilövő a Steam (szoftver elosztó szolgáltatás (software distribution service) részére"
+LOCAL33="Atari 2600 Emulator SDL és az X Window Rendszer (System) részére"
+LOCAL34="Full featured (teljesen felszerelt) Game Boy Advance emulátor"
+LOCAL35="Platformfüggetlen (Cross-platform) emulátor az Atari hírhedt Jaguar konzoljához"
+LOCAL36="Windows API implementálás"
+LOCAL37="A POSIX keretprogram parancsfájl (shell script) csomagkezelő ('package manager') WINE-hoz néhány Windows szoftver könnyű telepítéséhez
+LOCAL38="Sega Saturn emulátor"
+LOCAL39="Emulátor a Super Nintendo Szórakozási Rendszerhez (Entertainment System)"
+LOCAL40="Befejezni a Linuxra telepítését a Desura Clientnek, \na Menübe (át)menni-> Internet-> Desura Telepítő (Installer)\n\nKilépés..."
+LOCAL41="A legjobb módszer itch.io játékok játszásához"
+LOCAL42="VoIP software felhasználók közötti hangkommunikációhoz"
+LOCAL43="A Lutris egy játékkörnyezet GNU/Linuxhoz"
+LOCAL44="A GZDoom egy ZDoom-based port, amelyet Christoph Oelckers tart karban"
+LOCAL45="Nem telepíthető az Ön Debian/Sparky változatához."
+LOCAL46="Kilépés..."
+LOCAL47="Eltávolítás"
+LOCAL48="Újratelepítés"
+LOCAL49="Telepítés"
+LOCAL50="Ez a csomag már telepítve van."
+LOCAL51="Mit kíván most tenni?"
+LOCAL52="Az Internet kapcsolati teszt sikertelen!\n\nLehet, hogy Ön NEM kapcsolódik az Internet-hálózatra vagy a fő tárolószerver nem érhető el.\n\nEllenőrizze és próbálja újra!”
+LOCAL53="Telepíthetem az Ön által kiválasztott csomagot?"
+LOCAL54="A csomag sikeresen telepítésre került."
+LOCAL55="Ez a csomag nem érhető el az Ön rendszer változatához."
+### .desktop file to be translated too
+# Name[en_US]=
+# Comment[en_US]=Install game emulators via one click

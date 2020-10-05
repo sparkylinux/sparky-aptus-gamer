@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Virtual Jaguar
+Comment=Cross-platform emulator for Atari's infamous Jaguar console
+Comment[de]=Plattformübergreifender Emulator für Atari's berüchtigte Jaguar Konsole
+Comment[es]=Emulador de multiplataforma para la infame consola Jaguar de Atari
+Comment[fr]=Émulateur multiplatforme pour l’infâme console Jaguar d'Atari
+Comment[it]=Emulatore multipiattaforma per l'nfamen console Atari Jaguar
+Comment[ja]=クロスプラットフォーム Atari's infamous Jaguar コンソールエミュレータ
+Comment[pl]=Wieloplatformowy emulator dla konsoli Atari Jaguar
+Comment[pt_BR]=Emulador multi-plataforma para a infâmia console do Jaguar da  Atari
+Comment[pt_PT]=Emulador de plataforma cruzada para consola de Atari Jaguar infame
+Comment[ru]=Кроссплатформенный эмулятор для печально известной консоли Jaguar для Atari
+Exec=remsu /usr/bin/sparky-aptus-gamer virtualjaguar
+Icon=applications-games
+Type=Application
+Categories=Applications;Game

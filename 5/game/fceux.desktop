@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Fceux
+Comment=Nintendo Entertainment System (NES), Famicom and Famicom Disk System (FDS) emulator
+Comment[de]=Nintendo Entertainment System (NES), Famicom und Famicom Disk System (FDS) Emulator
+Comment[es]=Emulador de Nintendo Entertainment System (NES), Famicom y Famicom Disk System (FDS)
+Comment[fr]=Émulateur pour Nintendo Entertainment System (NES), Famicom et Famicom Disk System (FDS)
+Comment[it]=Emulatore per Nintendo Entertainment System (NES), Famicom e Famicom Disk System (FDS)
+Comment[ja]=Nintendo Entertainment System (NES), ファミコン・ディスクシステム (FDS) エミュレーター
+Comment[pl]=Emulator Nintendo Entertainment System (NES), Famicom i Famicom Disk System (FDS)
+Comment[pt_BR]=Emulador Nintendo Entertainment System (NES), Famicom e Famicom Disk System (FDS)
+Comment[pt_PT]=Sistema de entretenimento Nintendo (NES),  emulador Famicom Famicom Disco de sistema e (FDS)
+Comment[ru]=Nintendo Entertainment System (NES), эмулятор Famicom и Famicom Disk System (FDS)
+Exec=remsu /usr/bin/sparky-aptus-gamer fceux
+Icon=fceux
+Type=Application
+Categories=Applications;Game

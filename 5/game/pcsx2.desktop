@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=PCSX2
+Comment=Sony PlayStation emulator
+Comment[es]=Emulador de Sony PlayStation
+Comment[fr]=Émulateur pour Sony PlayStation
+Comment[it]=Emulatore per Sony PlayStation
+Comment[ja]=Sony PlayStation エミュレーター
+Comment[pl]=Emulator Sony PlayStation
+Comment[pt_BR]=Emulador para o Sony PlayStation
+Comment[pt_PT]=Emulador Sony PlayStation
+Comment[ru]=Эмулятор Sony PlayStation
+Exec=remsu /usr/bin/sparky-aptus-gamer pcsx2
+Icon=PCSX2
+Type=Application
+Categories=Applications;Game

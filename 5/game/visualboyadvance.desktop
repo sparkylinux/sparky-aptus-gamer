@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=VisualBoy Advance
+Comment=Full featured Game Boy Advance emulator
+Comment[de]=Umfangreicher Game Boy Advance Emulator
+Comment[es]=Emulador de Game Boy Advance con todas las funciones
+Comment[fr]=Émulateur complet pour Game Boy Advance
+Comment[it]=Emulatore avanzato per Game Boy Advance
+Comment[ja]=Game Boy Advance エミュレーター
+Comment[pl]=W pełni funkcjonalny emulator Game Boy Advance
+Comment[pt_BR]=Emulador avançado completo para o Game Boy
+Comment[pt_PT]=Emulador Cheio de recursos do Game Boy Advance
+Comment[ru]=Полнофункциональный эмулятор Game Boy Advance
+Exec=remsu /usr/bin/sparky-aptus-gamer visualboyadvance
+Icon=applications-games
+Type=Application
+Categories=Applications;Game

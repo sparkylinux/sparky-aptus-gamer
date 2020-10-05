@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=MAME™ Arcade Emulator
+Comment=Hardware emulator which faithfully reproduces the behavior of many arcade machines
+Comment[de]=Ein Hardware Emulator, welcher die Verhaltensweisen vieler Arcade Geräte simuliert
+Comment[es]=Emulador de hardware que reproduce fielmente el comportamiento de muchas máquinas arcade
+Comment[fr]=Émulateur matériel qui reproduit fidèlement le comportement de nombreuses machines d'arcade
+Comment[it]=Emulatore hardware che riproduce fedelmente il comportamento di tante macchine arcade
+Comment[ja]=多くのアーケードマシンの動作を再現できるハードウェアエミュレーター
+Comment[pl]=Emulator sprzętu, który wiernie odtwarza zachowanie wielu maszyn arcade
+Comment[pt_BR]=Emulador de hardware o qual reproduz fielmente o comportamento de muitas máquinas arcaicas
+Comment[pt_PT]=Emulador de hardware que reproduz fielmente o comportamento de muitas jogos eletrônicos
+Comment[ru]=Аппаратный эмулятор, верно воспроизводящий поведение многих аркадных устройств
+Exec=remsu /usr/bin/sparky-aptus-gamer mame
+Icon=mame
+Type=Application
+Categories=Applications;Game

@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Joystick
+Comment=Set of testing and calibration tools for joysticks
+Comment[de]=Set von Test- und Kalibrierwerkzeugen für Joysticks
+Comment[es]=Conjunto de herramientas de prueba y calibración para joysticks
+Comment[fr]=Ensemble d'outils de test et d'étalonnage pour les joysticks
+Comment[it]=Set di strumenti di test e calibrazione per joystick
+Comment[pl]=Zestaw narzędzi do testowania i kalibracji dżojstików
+Comment[pt]=Conjunto de ferramentas de teste e calibração para joysticks
+Comment[ru]=Набор инструментов для тестирования и калибровки для джойстиков
+Exec=remsu /usr/bin/sparky-aptus-gamer joystick
+Icon=input-gaming
+Type=Application
+Categories=Applications;Game

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Yabause (Gtk)
+Comment=Sega Saturn emulator
+Comment[es]=Emulador de Sega Saturn
+Comment[fr]=Émulateur de Sega Saturn
+Comment[it]=Emulatore per Sega Saturn
+Comment[ja]=Sega Saturn エミュレーター
+Comment[pl]=Emulator Sega Saturn
+Comment[pt_BR]=Emulador Sega Saturn
+Comment[pt_PT]=Emulador Sega Saturn
+Comment[ru]=Эмулятор Sega Saturn
+Exec=remsu /usr/bin/sparky-aptus-gamer yabause
+Icon=yabause
+Type=Application
+Categories=Applications;Game

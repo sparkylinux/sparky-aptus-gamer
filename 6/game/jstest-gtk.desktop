@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=jstest-gtk
+Comment=Joystick testing and configuration tool
+Comment[de]=Joystick-Test- und Konfigurationstool
+Comment[es]=Herramienta de comprobación y configuración de joysticks
+Comment[fr]=Outil de test et de configuration du joystick
+Comment[it]=Test del joystick e strumento di configurazione
+Comment[pl]=Narzędzie do testowania i konfigurowania joysticka
+Comment[pt]=Teste de joystick e ferramenta de configuração
+Comment[ru]=Инструмент для тестирования и настройки джойстика
+Exec=remsu /usr/bin/sparky-aptus-gamer jstest-gtk
+Icon=jstest-gtk
+Type=Application
+Categories=Applications;Game
