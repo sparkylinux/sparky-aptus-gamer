@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=SteamTinkerLaunch
+Comment=Linux wrapper tool for use with the Steam client
+Exec=remsu /usr/bin/sparky-aptus-gamer stl
+Icon=steam
+Type=Application
+Categories=Applications;Game
